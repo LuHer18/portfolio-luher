@@ -1,0 +1,51 @@
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+    
+}
+
+.purple{
+    position: absolute;
+    left: -20%;
+    top: -30%;
+    height: 60rem;
+    width: 80rem;
+    border-radius: 50%;
+    background-color: var(--bg-purple1);
+    filter: blur(25rem);
+}
+.red{
+    position: absolute;
+    right: -20%;
+    top: -30%;
+    height: 60rem;
+    width: 80rem;
+    border-radius: 50%;
+    background-color: var(--bg-red);
+    filter: blur(24rem);
+}
+
+.blue{
+    position: absolute;
+    left: -20%;
+    bottom: -30%;
+    height: 60rem;
+    width: 80rem;
+    border-radius: 50%;
+    background-color: var(--bg-blue);
+    filter: blur(25rem);
+}
+
+.purple2{
+    position: absolute;
+    right: -20%;
+    bottom: -30%;
+    height: 60rem;
+    width: 80rem;
+    border-radius: 50%;
+    background-color: var(--bg-purple2);
+    filter: blur(25rem);
+}

@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom"
 import { RouterApp } from "./router"
+import { Bg } from "./components"
 
 
 
@@ -7,10 +8,13 @@ import { RouterApp } from "./router"
 function App() {
 
   return (
-
-    <BrowserRouter>
-      <RouterApp />
-    </BrowserRouter>
+    <>
+      <Bg/>
+      <BrowserRouter>
+        <RouterApp />
+      </BrowserRouter>
+    </>
+    
   )
 }
 
