@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+    z-index: 1;
+}

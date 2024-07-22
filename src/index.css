@@ -10,6 +10,7 @@
     --bg-blue: #06338A;
     --bg-purple1: #3C0545;
     --bg-purple2: #2D0A33;
+    --text-color: #ffffff;
 }
 
 
@@ -24,6 +25,6 @@ html {
 }
 
 body {
-    min-height: 100vh;
+    height: 100%;
     background-color: #000;
 }
