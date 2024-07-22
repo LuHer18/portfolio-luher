@@ -1,7 +1,7 @@
-
+import style from './Hero.module.css'
 
 export const Hero = () => {
   return (
-    <section>Hero</section>
+    <section className={style.hero}></section>
   )
 }

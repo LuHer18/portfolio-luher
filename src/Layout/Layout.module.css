@@ -1,7 +1,9 @@
 .container {
     position: relative;
-
     display: flex;
+    max-width: 152rem;
+    width: 90%;
+    height: 10vh;
     flex-direction: column;
     align-items: center;
     margin-top: 10rem;
