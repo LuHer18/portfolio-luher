@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Orbitron:wght@400..900&display=swap');
+:root {
+    --title-font:"Orbitron", sans-serif; 
+    --p-font: "K2D", sans-serif;
+    --yelow-color: #D9AC25;
+    --red-color: #EA1E31;
+    --blue-color: #135AE5;
+    --transparen-color: rgba(3, 3, 16, 0.3);
+    --bg-red: #A50917;
+    --bg-blue: #06338A;
+    --bg-purple1: #3C0545;
+    --bg-purple2: #2D0A33;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
