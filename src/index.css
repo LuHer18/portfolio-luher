@@ -2,10 +2,10 @@
 :root {
     --title-font:"Orbitron", sans-serif; 
     --p-font: "K2D", sans-serif;
-    --yelow-color: #D9AC25;
+    --yellow-color: #D9AC25;
     --red-color: #EA1E31;
     --blue-color: #135AE5;
-    --transparen-color: rgba(3, 3, 16, 0.3);
+    --transparent-color: rgba(3, 3, 16, 0.3);
     --bg-red: #A50917;
     --bg-blue: #06338A;
     --bg-purple1: #3C0545;
@@ -22,9 +22,10 @@
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
 
 body {
-    height: 100%;
     background-color: #000;
+    height: 100%;
 }

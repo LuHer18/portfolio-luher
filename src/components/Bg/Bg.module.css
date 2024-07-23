@@ -3,9 +3,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -2;
+    min-height: 100vh;
+    height: 144.3rem;
+    overflow: hidden;    
+    z-index: -1;
     
 }
 
@@ -13,7 +14,7 @@
     position: absolute;
     left: -20%;
     top: -30%;
-    height: 60rem;
+    height: 80rem;
     width: 80rem;
     border-radius: 50%;
     background-color: var(--bg-purple1);
@@ -23,7 +24,7 @@
     position: absolute;
     right: -20%;
     top: -30%;
-    height: 60rem;
+    height: 80rem;
     width: 80rem;
     border-radius: 50%;
     background-color: var(--bg-red);
@@ -34,7 +35,7 @@
     position: absolute;
     left: -20%;
     bottom: -30%;
-    height: 60rem;
+    height: 80rem;
     width: 80rem;
     border-radius: 50%;
     background-color: var(--bg-blue);
@@ -45,9 +46,38 @@
     position: absolute;
     right: -20%;
     bottom: -30%;
-    height: 60rem;
+    height: 80rem;
     width: 80rem;
     border-radius: 50%;
     background-color: var(--bg-purple2);
     filter: blur(25rem);
+}
+
+@media (max-width: 768px) {
+    .container {
+        min-height: 100vh;
+        height: 228.3rem;
+    }
+    .purple, .red, .blue, .purple2 {
+        height: 120rem; /* Ajustar el tamaño para pantallas más pequeñas */
+        width: 30rem;
+        filter: blur(25rem); /* Reducir el blur en pantallas pequeñas */
+    }
+    .purple {
+        left: -20%;
+        top: -30%;
+    }
+    .red {
+        right: -20%;
+        top: -30%;
+    }
+    .blue {
+        left: -20%;
+        bottom: -30%;
+    }
+    .purple2 {
+        right: -20%;
+        bottom: -30%;
+
+    }
 }

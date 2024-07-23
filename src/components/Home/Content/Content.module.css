@@ -1,0 +1,82 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(auto, 375px) );
+    grid-template-rows: repeat(5, 150px);
+    grid-template-areas: 
+        "about about about project"
+        "about about about project"
+        "contact skills skills skills"
+        "contact skills skills skills"
+        "curriculum skills skills skills"
+    
+    ;
+    gap: 2rem;
+}
+
+.container article:first-child {
+
+    grid-area: about;
+}
+.container article:nth-child(2) {
+    grid-area: project;
+}
+
+.container article:nth-child(3){
+    grid-area: contact;
+
+}
+
+.container article:nth-child(4) {
+    grid-area: curriculum;
+
+}
+
+.container article:nth-child(5) {
+    grid-area: skills;
+
+}
+
+.bg{
+    background-color: var(--transparent-color);
+    border: 0.07rem solid;
+    border-radius: 1.6rem;
+    padding: 2rem;
+}
+.yellowb{
+    border-color: var(--yellow-color);
+}
+.redb{
+    border-color: var(--red-color);
+}
+.blueb{
+    border-color: var(--bg-blue);
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(4,minmax(auto, 375px) );
+        grid-template-rows: repeat(5, 150px);
+        grid-template-areas: 
+        "about about about about"
+        "about about about about"
+        "project project skills skills"
+        "project project skills skills"
+        "curriculum curriculum contact contact"
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: minmax(auto, 50rem);
+        grid-template-rows: repeat(3,40rem) repeat(2, 20rem) ;
+        grid-template-areas: 
+            "about"
+            "project"
+            "skills"
+            "curriculum"
+            "contact";
+    }
+
+}
