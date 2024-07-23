@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 38.3rem;
     border: 0.07rem var(--red-color) solid;
-    background: linear-gradient(to right, rgba(1, 19, 54, 0) 14%, rgba(1, 1, 37, 0.7) 51%, rgba(64, 2, 17, 0.7) 100%), url('../../../assets/bg-image.webp');
+    background: linear-gradient(to right, rgba(1, 19, 54, 0.6) 14%, rgba(1, 1, 37, 0.7) 51%, rgba(64, 2, 17, 0.7) 100%), url('../../../assets/bg-image.webp');
     background-size: cover;
     border-radius: 1.6rem;
 }
