@@ -1,7 +1,11 @@
+import { Layout } from "../Layout"
 
 
 export const About = () => {
   return (
-    <div>About</div>
+    <Layout>
+      <div>About</div>
+    </Layout>
+    
   )
 }

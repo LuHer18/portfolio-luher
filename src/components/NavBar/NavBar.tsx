@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom"
 import { spanishNav } from "../../data/navLanguage"
+import style from './NavBar.module.css'
 
 export const NavBar = () => {
-    console.log(spanishNav)
   return (
-    <footer>
-    <nav>
-      <ul>
+    <footer className={style.footer}>
+    <nav className={style.nav}>
+      <ul className={style.ul}>
         {spanishNav.map(item => (
-          <li key={item.id}> {/* Añadido <li> para cada NavLink */}
+          <li key={item.id}>
             <NavLink
               to={item.path}
               className={({ isActive }) => (isActive ? 'active' : '')}

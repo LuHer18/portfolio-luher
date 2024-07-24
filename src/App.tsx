@@ -9,10 +9,10 @@ function App() {
 
   return (
     <>
-      <Bg />
-      <RouterApp />
-      <NavBar />
-
+      <Bg>
+        <RouterApp />
+        <NavBar />
+      </Bg>
 
     </>
 

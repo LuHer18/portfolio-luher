@@ -1,0 +1,30 @@
+.footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: var(--transparent-color);
+    height: 10rem;
+    backdrop-filter: blur(2px);
+    z-index: 2;
+    
+
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+
+}
+.ul {
+    display: flex;
+    gap: 2rem;
+    width: 50rem;
+    justify-content: center;
+    height: 6.4rem;
+    align-items: center;
+    list-style: none;
+    border-radius: 1.6rem;
+    border: 0.07rem var(--red-color) solid ;
+}

@@ -3,8 +3,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
-    height: 144.3rem;
     overflow: hidden;    
     z-index: -1;
     
@@ -54,10 +52,7 @@
 }
 
 @media (max-width: 600px) {
-    .container {
-        min-height: 100vh;
-        height: 228.3rem;
-    }
+
     .purple, .red, .blue, .purple2 {
         height: 120rem; /* Ajustar el tamaño para pantallas más pequeñas */
         width: 30rem;
