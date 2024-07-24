@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import { spanishNav } from "../../data/navLanguage"
 import style from './NavBar.module.css'
+import { IconAbout } from "../../assets/IconAbout"
 
 export const NavBar = () => {
   return (
@@ -17,6 +18,9 @@ export const NavBar = () => {
             </NavLink>
           </li>
         ))}
+      </ul>
+      <ul className={style.ul2}>
+        <IconAbout/>
       </ul>
     </nav>
   </footer>
