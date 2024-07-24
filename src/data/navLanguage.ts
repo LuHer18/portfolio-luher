@@ -21,7 +21,7 @@ export const spanishNav: DataNav[] = [
     }
 ]
 
-export const englishhNav: DataNav[] = [
+export const englishNav: DataNav[] = [
     {
         path: "/",
         title: "Home",

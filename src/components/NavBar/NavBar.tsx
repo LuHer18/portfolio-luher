@@ -1,20 +1,28 @@
 import { NavLink } from "react-router-dom"
-import { spanishNav } from "../../data/navLanguage"
 import style from './NavBar.module.css'
 import { IconAbout, IconProjects, IconChangeLanguage } from "../Icons"
+import { useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 
 interface IconNavbar {
   [key: string]: React.ComponentType;
 }
 
 export const NavBar = () => {
+  const context = useContext(LanguageContext)
+  if (!context) {
+    return null;
+  }
+  const {navLanguage, handleLanguage} = context
+
+  
   const iconNavbar : IconNavbar = { IconAbout, IconProjects }
 
   return (
     <footer className={style.footer}>
       <nav className={style.nav}>
         <ul className={style.ul}>
-          {spanishNav.map(item => {
+          {navLanguage.map(item => {
             const Icon= iconNavbar[item.iconName]
             return (<li key={item.id}>
               <NavLink
@@ -29,7 +37,7 @@ export const NavBar = () => {
           })}
         </ul>
         <ul className={style.ul2}>
-          <IconChangeLanguage />
+          <IconChangeLanguage onClick ={handleLanguage} />
         </ul>
       </nav>
     </footer>

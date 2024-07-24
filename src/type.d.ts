@@ -12,3 +12,9 @@ export interface TitleLanguage {
     skills: string;
     curriculum: string;
 }
+
+/* export interface LanguageContext {
+    titleLanguage: TitleLanguage,
+    navLanguage: DataNav,
+    HandleLanguage: ()=> void
+} */
