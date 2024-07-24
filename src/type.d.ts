@@ -2,6 +2,7 @@ export interface DataNav {
     path: string;
     title: string;
     id: string;
+    iconName: string;
 }
 
 export interface TitleLanguage {

@@ -1,28 +1,37 @@
 import { NavLink } from "react-router-dom"
 import { spanishNav } from "../../data/navLanguage"
 import style from './NavBar.module.css'
-import { IconAbout } from "../../assets/IconAbout"
+import { IconAbout, IconProjects, IconChangeLanguage } from "../Icons"
+
+interface IconNavbar {
+  [key: string]: React.ComponentType;
+}
 
 export const NavBar = () => {
+  const iconNavbar : IconNavbar = { IconAbout, IconProjects }
+
   return (
     <footer className={style.footer}>
-    <nav className={style.nav}>
-      <ul className={style.ul}>
-        {spanishNav.map(item => (
-          <li key={item.id}>
-            <NavLink
-              to={item.path}
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              {item.title}
-            </NavLink>
-          </li>
-        ))}
-      </ul>
-      <ul className={style.ul2}>
-        <IconAbout/>
-      </ul>
-    </nav>
-  </footer>
+      <nav className={style.nav}>
+        <ul className={style.ul}>
+          {spanishNav.map(item => {
+            const Icon= iconNavbar[item.iconName]
+            return (<li key={item.id}>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                <h3>{item.title}</h3>
+                <Icon/>
+              </NavLink>
+            </li>
+            )
+          })}
+        </ul>
+        <ul className={style.ul2}>
+          <IconChangeLanguage />
+        </ul>
+      </nav>
+    </footer>
   )
 }
