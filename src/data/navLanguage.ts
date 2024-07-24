@@ -1,6 +1,6 @@
 import { DataNav } from "../type";
 
-export const spanishhNav: DataNav[] = [
+export const spanishNav: DataNav[] = [
     {
         path: "/",
         title: "Inicio",

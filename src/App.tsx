@@ -1,6 +1,6 @@
-import { BrowserRouter } from "react-router-dom"
+
 import { RouterApp } from "./router"
-import { Bg } from "./components"
+import { Bg, NavBar } from "./components"
 
 
 
@@ -9,12 +9,13 @@ function App() {
 
   return (
     <>
-      <Bg/>
-      <BrowserRouter>
-        <RouterApp />
-      </BrowserRouter>
+      <Bg />
+      <RouterApp />
+      <NavBar />
+
+
     </>
-    
+
   )
 }
 
