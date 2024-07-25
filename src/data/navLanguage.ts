@@ -9,7 +9,7 @@ export const spanishNav: DataNav[] = [
     },
     {
         path: "/about",
-        title: "Sobre mi",
+        title: "Sobre",
         id: "2b",
         iconName: "IconAbout"
     },
@@ -30,7 +30,7 @@ export const englishNav: DataNav[] = [
     },
     {
         path: "/about",
-        title: "About me",
+        title: "About",
         id: "2bb",
         iconName: "IconAbout"
     },

@@ -21,7 +21,8 @@ export const LanguageProvider = ({children}: PropsWithChildren) => {
     }
   return (
     <LanguageContext.Provider value={
-        {
+        {   
+            language,
             navLanguage, 
             titleLanguage, 
             handleLanguage

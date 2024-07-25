@@ -9,7 +9,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     padding: 2rem;
 
 }
@@ -17,7 +16,7 @@
     display: flex;
     width: 40rem;
     justify-content: center;
-    height: 6.4rem;
+    height: 7rem;
     align-items: center;
     border-radius: 1.6rem;
     border: 0.07rem var(--red-color) solid ;
@@ -46,4 +45,76 @@
 
 .ul2 {
     color: gray;
+}
+.listNavBar {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLink {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0rem;
+    
+   
+}
+
+.active{
+    position: relative;
+    
+}
+.active::after{
+    content: '';
+    position: absolute;
+    bottom: -4%;
+      left: 50%;
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: #108614;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    
+}
+
+.iconbox {
+    color: gray;
+    position: relative;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    border: 0.07rem var(--red-color) solid ;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 0.5rem  rgba(234, 30, 49, 0.4);
+    transition: transform 0.3s ease-in-out;    
+}
+
+.tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: var(--transparent-color);
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease-in;
+}
+.tooltipRight{
+    opacity: 1;
+    
+}
+.iconbox:hover{
+    cursor: pointer;
+    color: white;
+    transform: translateY(-20px) scale(1.2);
+}
+
+.iconbox:hover .tooltip{
+    top: -75%;
+    opacity: 1;
 }

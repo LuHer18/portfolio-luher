@@ -13,7 +13,7 @@ export const NavBar = () => {
   if (!context) {
     return null;
   }
-  const {navLanguage, handleLanguage} = context
+  const {navLanguage, handleLanguage, language} = context
 
   
   const iconNavbar : IconNavbar = { IconAbout, IconProjects }
@@ -24,20 +24,27 @@ export const NavBar = () => {
         <ul className={style.ul}>
           {navLanguage.map(item => {
             const Icon= iconNavbar[item.iconName]
-            return (<li key={item.id}>
+            return (<li className={style.listNavBar} key={item.id}>
               <NavLink
                 to={item.path}
-                className={({ isActive }) => (isActive ? 'active' : '')}
+                className={({ isActive }) => ` ${(isActive ? style.active : '')} ${style.navLink}`}
               >
-                <h3>{item.title}</h3>
-                <Icon/>
+                <div className={style.iconbox}>
+                  <span className={`button-text ${style.tooltip}`}>{item.title}</span>
+                  <Icon/>
+                </div>
               </NavLink>
             </li>
             )
           })}
         </ul>
         <ul className={style.ul2}>
-          <IconChangeLanguage onClick ={handleLanguage} />
+          <li className={style.listNavBar}>
+            <div className={style.iconbox} onClick ={handleLanguage}>
+            <span className={`button-text ${style.tooltip} ${style.tooltipRight}`}>{language}</span>
+              <IconChangeLanguage />
+            </div>
+          </li>
         </ul>
       </nav>
     </footer>
