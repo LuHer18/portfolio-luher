@@ -1,0 +1,35 @@
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.containerContentContact {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.textContact{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.buttonSendEmail {
+    width: 19.4rem;
+    height: 3.8rem;
+    padding: 1rem 2.4rem;
+    transition: 0.5s ease;
+}
+
+.buttonSendEmail:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .containerContentContact {
+        gap: 2rem;
+    }
+
+}
+

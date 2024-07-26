@@ -1,16 +1,17 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(4,minmax(auto, 375px) );
+    grid-template-columns: repeat(4,minmax(auto, 410px) );
     grid-template-rows: repeat(5, 150px);
     grid-template-areas: 
         "about about about project"
         "about about about project"
-        "contact skills skills skills"
-        "contact skills skills skills"
-        "curriculum skills skills skills"
+        "contact contact skills skills"
+        "contact contact skills skills"
+        "curriculum curriculum skills skills"
     
     ;
     gap: 2rem;
+    padding-bottom: 7rem;
 }
 
 .container article:first-child {
@@ -40,7 +41,7 @@
     background-color: var(--transparent-color);
     border: 0.07rem solid;
     border-radius: 1.6rem;
-    padding: 2rem;
+    padding: 3rem;
 }
 .yellowb{
     border-color: var(--yellow-color);
@@ -54,13 +55,14 @@
 
 @media (max-width: 1000px) {
     .container {
-        grid-template-columns: repeat(4,minmax(auto, 375px) );
-        grid-template-rows: repeat(5, 150px);
+        grid-template-columns: repeat(4,minmax(auto, 20rem) );
+        grid-template-rows: repeat(6, 20rem);
         grid-template-areas: 
         "about about about about"
         "about about about about"
         "project project skills skills"
         "project project skills skills"
+        "curriculum curriculum contact contact"
         "curriculum curriculum contact contact"
     }
 
@@ -70,7 +72,7 @@
 @media (max-width: 600px) {
     .container {
         grid-template-columns: minmax(auto, 50rem);
-        grid-template-rows: repeat(3,40rem) repeat(2, 20rem) ;
+        grid-template-rows: repeat(3,40rem) repeat(2, 30rem) ;
         grid-template-areas: 
             "about"
             "project"

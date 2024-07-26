@@ -29,16 +29,6 @@ body {
 }
 
 
-/* .active::before{
-    content: "•";
-    position: absolute;
-    bottom: -60%;
-    color: #108614;
-    right: 36%;
-    transform: translate(-50%, -50%);
-    font-size: 2.4rem;
-} */
-
 .title1 {
     font-family: var(--title-font);
     font-size: 2.4rem;
@@ -60,6 +50,14 @@ body {
 }
 
 .button-text {
-    font-family: var(--p-font);
+    font-family: var(--title-font);
     font-size: 1.5rem;
+}
+
+.button-style {
+    background: linear-gradient(80deg, #7C1304 0%, #C61A2A 54%, #7C1304 100%);
+    color: var(--text-color);
+    border: 0.05rem var(--text-color) solid;
+    border-radius: 0.8rem;
+    cursor: pointer;
 }
