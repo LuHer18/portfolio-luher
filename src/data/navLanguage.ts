@@ -9,7 +9,7 @@ export const spanishNav: DataNav[] = [
     },
     {
         path: "/about",
-        title: "Sobre",
+        title: "Conóceme",
         id: "2b",
         iconName: "IconAbout"
     },
