@@ -13,8 +13,11 @@ export interface TitleLanguage {
     curriculum: string;
 }
 
-/* export interface LanguageContext {
-    titleLanguage: TitleLanguage,
-    navLanguage: DataNav,
-    HandleLanguage: ()=> void
-} */
+export interface SubContentLanguage {
+    p1: string;
+    p2: string;
+    sendEmailButton: string;
+    viewCurriculum: string;
+    download: string;
+}
+

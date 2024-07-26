@@ -2,6 +2,7 @@ import {PropsWithChildren, useState } from "react"
 import { LanguageContext } from "./LanguageContext"
 import { englishNav, spanishNav } from "../data/navLanguage"
 import { titleEnglish, titleSpanish } from "../data/titleLanguage"
+import { subContentEnglish, subContentSpanish } from "../data/subContent"
 
 
 export const LanguageProvider = ({children}: PropsWithChildren) => {
@@ -9,6 +10,7 @@ export const LanguageProvider = ({children}: PropsWithChildren) => {
 
     const navLanguage = (language === "es")? spanishNav: englishNav
     const titleLanguage = (language === "es")? titleSpanish: titleEnglish
+    const subContentLanguage = (language === "es")? subContentSpanish: subContentEnglish
 
     
 
@@ -24,7 +26,8 @@ export const LanguageProvider = ({children}: PropsWithChildren) => {
         {   
             language,
             navLanguage, 
-            titleLanguage, 
+            titleLanguage,
+            subContentLanguage,
             handleLanguage
         }}>
         {children}
