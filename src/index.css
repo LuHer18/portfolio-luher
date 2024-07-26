@@ -55,7 +55,7 @@ body {
 }
 
 .button-style {
-    background: linear-gradient(80deg, #7C1304 0%, #C61A2A 54%, #7C1304 100%);
+    background: linear-gradient(120deg, #7C1304 0%, #C61A2A 54%, #7C1304 100%);
     color: var(--text-color);
     border: 0.05rem var(--text-color) solid;
     border-radius: 0.8rem;
