@@ -19,7 +19,7 @@
     height: 7rem;
     align-items: center;
     border-radius: 1.6rem;
-    border: 0.07rem var(--red-color) solid ;
+    border: 0.07rem rgba(124, 19, 4, 0.7) solid ;
 
 }
 .ul {
@@ -40,7 +40,7 @@
     top: 0;
     width: 1px; /* Ancho de la línea */
     height: 100%;
-    background-color: var(--red-color);
+    background-color: rgba(124, 19, 4, 0.7);
 }
 
 .ul2 {

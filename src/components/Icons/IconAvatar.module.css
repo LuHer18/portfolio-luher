@@ -1,0 +1,30 @@
+.avatarContainer {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    margin: 0 auto;
+    
+  }
+  
+  .avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .avatarHelmet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.2s ease, transform 0.5s ease;
+  }
+  
+  .avatarContainer:hover .avatarHelmet {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

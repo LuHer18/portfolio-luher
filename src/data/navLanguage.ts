@@ -5,7 +5,7 @@ export const spanishNav: DataNav[] = [
         path: "/",
         title: "Inicio",
         id: "1a",
-        iconName: "IconAbout"
+        iconName: "IconAvatar"
     },
     {
         path: "/about",
@@ -26,7 +26,7 @@ export const englishNav: DataNav[] = [
         path: "/",
         title: "Home",
         id: "1aa",
-        iconName: "IconAbout"
+        iconName: "IconAvatar"
     },
     {
         path: "/about",

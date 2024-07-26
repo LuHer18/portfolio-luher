@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 import style from './NavBar.module.css'
-import { IconAbout, IconProjects, IconChangeLanguage } from "../Icons"
+import { IconAbout, IconProjects, IconChangeLanguage, IconAvatar } from "../Icons"
 import { useContext } from "react";
 import { LanguageContext } from "../../context/LanguageContext";
 
@@ -16,7 +16,7 @@ export const NavBar = () => {
   const {navLanguage, handleLanguage, language} = context
 
   
-  const iconNavbar : IconNavbar = { IconAbout, IconProjects }
+  const iconNavbar : IconNavbar = { IconAvatar ,IconAbout, IconProjects }
 
   return (
     <footer className={style.footer}>
