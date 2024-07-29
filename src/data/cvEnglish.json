@@ -1,0 +1,348 @@
+{
+  "basics": {
+    "name": "Luis Herrera Contreras",
+    "label": "Desarrollador FrontEnd",
+    "image": "/profile.webp",
+    "email": "luis1818.lh@gmail.com",
+    "phone": "+57 3043685757",
+    "url": "",
+    "summary": ["+ 4 años de experiencia como Ingeniero Industrial especializado en compras. Actualmente, soy Desarrollador Frontend con habilidades en frameworks, diseño responsivo, creación y consumo de APIs, pruebas de código y control de versiones.", "Mi experiencia anterior me ha dotado de competencias transferibles al desarrollo web, como la optimización de procesos, la resolución de problemas y la gestión de proyectos. Dispuesto a aplicar mis conocimientos técnicos y mi experiencia en un entorno de desarrollo web, contribuyendo con soluciones innovadoras y eficientes."],
+    "location": {
+      "address": "",
+      "postalCode": "130001",
+      "city": "Cartagena",
+      "countryCode": "COL",
+      "region": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Luis Herrera",
+        "url": "https://www.linkedin.com/in/luis-herrera-26b706161/"
+      },
+      {
+        "network": "GitHub",
+        "username": "LuHer18",
+        "url": "https://github.com/LuHer18"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "",
+      "position": "",
+      "url": "",
+      "startDate": "2",
+      "endDate": null,
+      "summary": "",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnologica de Bolívar",
+      "url": "https://www.utb.edu.co/",
+      "area": "Ingeniero Industrial",
+      "studyType": "Título universitario",
+      "startDate": "2013-01-30",
+      "endDate": "2017-07-26",
+      "score": "4.08"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "React: De cero a experto (Hooks y MERN)",
+      "date": "2024-05-15",
+      "issuer": "Udemy",
+      "url": "https://ude.my/UC-56807ac5-6360-473f-aa49-041001a94755"
+    },
+    {
+      "name": "Curso de React.js con Vite.js y TailwindCSS",
+      "date": "2023-12-19",
+      "issuer": "Platzi",
+      "url": "https://platzi.com/p/Luher/curso/7396-react-vite-tailwindcss/diploma/detalle/"
+    },
+    {
+      "name": "Curso Práctico de JavaScript",
+      "date": "2023-08-24",
+      "issuer": "Platzi",
+      "url": "https://platzi.com/p/Luher/curso/3271-javascript-practico/diploma/detalle/"
+    },
+    {
+      "name": "Curso Definitivo de HTML y CSS",
+      "date": "2023-08-02",
+      "issuer": "Platzi",
+      "url": "https://platzi.com/p/Luher/curso/2008-html-css/diploma/detalle/"
+    },
+    {
+      "name": "Curso Profesional de Git y GitHub",
+      "date": "2023-06-13",
+      "issuer": "Platzi",
+      "url": "https://platzi.com/p/Luher/curso/1557-git-github/diploma/detalle/"
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Node.js",
+      "level": "Básico",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Express.js",
+      "level": "Básico",
+      "keywords": [
+        "Desarrollo Web",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "Material UI",
+      "level": "Básico",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Básico",
+      "keywords": [
+        "Base de datos",
+        "Backend",
+        "NoSQL"
+      ]
+    },
+    {
+      "name": "SQL",
+      "level": "Básico",
+      "keywords": [
+        "Base de datos",
+        "Backend",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Jest",
+      "level": "Intermedio",
+      "keywords": [
+        "Testing",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "React Testing Library",
+      "level": "Intermedio",
+      "keywords": [
+        "Testing",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermedio",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "B1"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Calendar",
+      "isActive": true,
+      "description": "Crea eventos, revisa y actualiza tu agenda, se más productivo.",
+      "highlights": [
+        "React",
+        "Bootstrap",
+        "Node",
+        "Express",
+        "MongoDB"
+      ],
+      "url": "https://calendar-ebon-seven.vercel.app/",
+      "urlGitHub": "https://github.com/LuHer18/calendar",
+      "ideasPlanning": {
+        "inspiration": "Basado en aplicaciones como Google Calendar",
+        "mainFunctions": [
+          "Crear, editar, y eliminar eventos del calendario",
+          "Visualizar en manera de agenda los eventos creados"
+        ]
+      },
+      "implementationFunctionalities": [
+        "Implementación de JWT",
+        "Diseño responsivo con Bootstrap y librería react-big-calendar para el diseño del calendario",
+        "Peticiones API manejadas con axios"
+      ],
+      "testingDeployment": [
+        "Pruebas Unitarias y de integración con Jest y React Testing Library",
+        "Despliegue Frontend en Vercel y Backend con Render"
+      ],
+      "lessonsImprovements": {
+        "lessonsLearned": "Mejor gestión del estado y experiencia en despliegue continuo",
+        "futureImprovements": [
+          "Implementar notificaciones",
+          "Funcionalidades colaborativas"
+        ]
+      },
+      "conclusion": "El proyecto Calendar ha mejorado mis habilidades con React y Redux, con lo cual he logrado manejar de manera eficiente el estado global de mis aplicaciones. A su vez, se ha visto mejorada mi manera de generar autenticaciones con la ayuda de los JWT."
+    },
+    {
+      "name": "Viva Color",
+      "isActive": true,
+      "description": "Genera paletas de colores ideales para tus sitios webs",
+      "highlights": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "url": "https://viva-color-app.netlify.app",
+      "urlGitHub": "https://github.com/LuHer18/viva-color-app",
+      "ideasPlanning": {
+        "inspiration": "Basado en aplicaciones como Amazon Prime Video",
+        "mainFunctions": [
+          "Página con películas y series principales",
+          "Buscar películas y series",
+          "Visualizar trailers y una breve descripción de las películas y series"
+        ]
+      },
+      "implementationFunctionalities": [
+        "Diseño responsivo con TailwindCSS",
+        "Peticiones API manejadas con fetch nativo",
+        "Gestión de páginas mediante React Router Dom"
+      ],
+      "testingDeployment": [
+        "Pruebas Unitarias y de integración con Jest y React Testing Library"
+      ],
+      "lessonsImprovements": {
+        "lessonsLearned": "Mejor gestión del uso de React Router",
+        "futureImprovements": [
+          "Implementar clasificación de películas por filtrado en el home",
+          "Generar paginación"
+        ]
+      },
+      "conclusion": "El proyecto Popcorn ha mejorado mis habilidades con React y React-router-dom. La implementación de skeleton custom realizado con TailwindCSS el cual potencia mis habilidades en diseño UI."
+    },
+    {
+      "name": "PopCorn Film",
+      "isActive": true,
+      "description": "Busca trailers de tus películas y series favoritas. Construida con información obtenida por la API de TMDB",
+      "highlights": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "url": "https://popcorn-film.vercel.app",
+      "urlGitHub": "https://github.com/LuHer18/popcorn-film",
+      "ideasPlanning": {
+        "inspiration": "Basado en aplicaciones como Amazon Prime Video",
+        "mainFunctions": [
+          "Página con películas y series principales",
+          "Buscar películas y series",
+          "Visualizar trailers y una breve descripción de las películas y series"
+        ]
+      },
+      "implementationFunctionalities": [
+        "Diseño responsivo con TailwindCSS",
+        "Peticiones API manejadas con fetch nativo",
+        "Gestión de páginas mediante React Router Dom"
+      ],
+      "testingDeployment": [
+        "Despliegue Frontend en Vercel"
+      ],
+      "lessonsImprovements": {
+        "lessonsLearned": "Mejor gestión del uso de React Router",
+        "futureImprovements": [
+          "Implementar clasificación de películas por filtrado en el home",
+          "Generar paginación"
+        ]
+      },
+      "conclusion": "El proyecto Popcorn ha mejorado mis habilidades con React y React-router-dom. La implementación de skeleton custom realizado con TailwindCSS el cual potencia mis habilidades en diseño UI."
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 import { createContext } from "react";
-import { DataNav, SubContentLanguage, TitleLanguage } from "../type";
+import { Curriculum, DataNav, SubContentLanguage, TitleLanguage } from "../type";
 
 export interface LanguageContext {
     language: string;
+    data: Curriculum | null;
     titleLanguage: TitleLanguage;
     navLanguage: DataNav[];
     subContentLanguage: SubContentLanguage;
