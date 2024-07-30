@@ -1,0 +1,11 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
