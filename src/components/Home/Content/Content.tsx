@@ -4,6 +4,7 @@ import { LanguageContext } from '../../../context/LanguageContext'
 import { Contact } from './Contact'
 import { Curriculum } from './Curriculum'
 import { About } from './About'
+import { Project } from './Project'
 export const Content = () => {
   const context = useContext(LanguageContext)
   if (!context) {
@@ -14,7 +15,7 @@ export const Content = () => {
   return (
     <section className={style.container}>
       <article className={`${style.bg} ${style.yellowb}`}><About title={titleLanguage.about} data ={data}/></article>
-      <article className={`${style.bg} ${style.blueb}`}><h2 className='title2'>{titleLanguage.project}</h2></article>
+      <article className={`${style.bg} ${style.blueb}`}><Project title= {titleLanguage.project}/></article>
       <article className={`${style.bg} ${style.redb}`}>
         <Contact title={titleLanguage.contact} subContent={subContentLanguage} />
       </article>
