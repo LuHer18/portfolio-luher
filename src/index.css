@@ -40,7 +40,7 @@ body {
 }
 
 .title3 {
-    font-family: var(--title-font);
+    font-family: var(--p-font);
     font-size: 1.7rem;
 }
 
