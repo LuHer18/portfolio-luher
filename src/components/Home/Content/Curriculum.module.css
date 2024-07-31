@@ -24,7 +24,7 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
     .curriculumContainer {
         gap: 6rem;
     }

@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(4,minmax(auto, 410px) );
+    grid-template-columns: repeat(4,minmax(200px, 1fr) );
     grid-template-rows: repeat(5, 150px);
     grid-template-areas: 
         "about about about project"
@@ -15,7 +15,7 @@
 }
 
 .container article:first-child {
-
+    
     grid-area: about;
 }
 .container article:nth-child(2) {
@@ -53,9 +53,9 @@
     border-color: var(--bg-blue);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
     .container {
-        grid-template-columns: repeat(4,minmax(auto, 20rem) );
+        grid-template-columns: repeat(4,minmax(150px, 1fr) );
         grid-template-rows: repeat(6, 20rem);
         grid-template-areas: 
         "about about about about"
@@ -71,7 +71,7 @@
 
 @media (max-width: 600px) {
     .container {
-        grid-template-columns: minmax(auto, 50rem);
+        grid-template-columns: minmax(150px, 1fr);
         grid-template-rows: repeat(3,40rem) repeat(2, 30rem) ;
         grid-template-areas: 
             "about"
