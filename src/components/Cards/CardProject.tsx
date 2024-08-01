@@ -1,16 +1,20 @@
+import { Demo, GitHub } from '../Icons'
+import styleCard from './CardProject.module.css'
 
 export const CardProject = () => {
 
   const urlImage = `/assets/${'calendar'}.webp`
 
   return (
-    <article>
-        <img src={urlImage} alt="imagen proyecto" />
-        <div>
-            <h2>Titulo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nesciunt tempora optio cum necessitatibus nisi aspernatur dolorem tempore repellat harum odio cupiditate nihil repellendus libero, molestias velit voluptatum inventore delectus.</p>
-            <button>Demo</button>
-            <button>Repo</button>
+    <article className={styleCard.cardContainer}>
+        <img className={styleCard.imgCard} src={urlImage} alt="imagen proyecto" />
+        <div className={styleCard.containerContent}>
+            <h2 className={`title2`}>Titulo</h2>
+            <p className={`paragraph`}>Crea eventos, revisa y actualiza tu agenda, se más productivo.</p>
+            <div className={styleCard.cardContainerEnlaces}>
+              <a className={`button-text ${styleCard.enlaces}`} href=""><Demo/></a>
+              <a className={`button-text ${styleCard.enlaces}`} href=""><GitHub/></a>
+            </div>
         </div>
     </article>
   )

@@ -1,0 +1,34 @@
+.cardContainer {
+    display:  flex;
+    flex-direction: column;
+    max-width: 39rem;
+    border: 0.005rem white solid;
+    border-radius: 0.8rem;
+    background-color: var(--transparent-color);
+
+}
+.imgCard {
+    border-radius: 1rem;
+}
+
+
+
+.containerContent {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.cardContainerEnlaces{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.enlaces{
+    width: 3.2rem;
+    height: 3.2rem;
+    text-decoration: none;
+    color: var(--yellow-color);
+}
