@@ -1,8 +1,8 @@
 {
   "basics": {
-    "name": "Luis Herrera Contreras",
+    "name": "Luis Herrera C",
     "label": "Desarrollador FrontEnd",
-    "image": "/profile.webp",
+    "image": "",
     "email": "luis1818.lh@gmail.com",
     "phone": "+57 3043685757",
     "url": "",
@@ -236,6 +236,7 @@
   "projects": [
     {
       "name": "Calendar",
+      "image": "calendar",
       "isActive": true,
       "description": "Crea eventos, revisa y actualiza tu agenda, se más productivo.",
       "highlights": [
@@ -274,6 +275,7 @@
     },
     {
       "name": "Viva Color",
+      "image": "viva-color",
       "isActive": true,
       "description": "Genera paletas de colores ideales para tus sitios webs",
       "highlights": [
@@ -310,6 +312,7 @@
     },
     {
       "name": "PopCorn Film",
+      "image": "popcorn-film",
       "isActive": true,
       "description": "Busca trailers de tus películas y series favoritas. Construida con información obtenida por la API de TMDB",
       "highlights": [

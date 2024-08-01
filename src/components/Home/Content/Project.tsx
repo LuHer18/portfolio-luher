@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import imageProject from '../../../assets/imageProjects.webp'
+import imageProject from '../../../../assets/imageProjects.webp'
 import style from './Project.module.css'
 
 type PropsProject = {

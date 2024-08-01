@@ -1,6 +1,6 @@
 import style from './IconAvatar.module.css'
-import avatar from '../../assets/avatar-luher.webp'
-import ironLuher from '../../assets/avatar-ironluher.webp'
+import avatar from '../../../assets/avatar-luher.webp'
+import ironLuher from '../../../assets/avatar-ironluher.webp'
 
 
 

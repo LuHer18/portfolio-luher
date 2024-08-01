@@ -83,6 +83,7 @@ export interface Language {
 
 export interface Project {
     name:                          string;
+    image:                         string;
     isActive:                      boolean;
     description:                   string;
     highlights:                    string[];
