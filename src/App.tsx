@@ -10,12 +10,13 @@ function App() {
 
   return (
     <>
-      <Bg>
+      
         <LanguageProvider>
           <RouterApp />
           <NavBar />
         </LanguageProvider>
-      </Bg>
+        <Bg/>
+      
 
     </>
 

@@ -1,5 +1,5 @@
 .container{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     min-height: 100vh;
@@ -52,12 +52,12 @@
     filter: blur(25rem);
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
 
     .purple, .red, .blue, .purple2 {
-        height: 120rem; /* Ajustar el tamaño para pantallas más pequeñas */
+        height: 120rem; 
         width: 30rem;
-        filter: blur(25rem); /* Reducir el blur en pantallas pequeñas */
+        filter: blur(25rem); 
     }
     .purple {
         left: -20%;
@@ -76,4 +76,4 @@
         bottom: -30%;
 
     }
-}
+} */
