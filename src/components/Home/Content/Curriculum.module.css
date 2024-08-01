@@ -19,6 +19,17 @@
     width: 12.5rem;
     transition: 0.5s ease;
 }
+.aCv {
+    text-decoration: none;
+    border: 0.1rem solid var(--border-transparent);
+    border-radius: 0.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+.aCv:hover {
+    background-color: var(--transparent-color);
+}
 
 .buttonOrder:hover {
     transform: scale(1.1);

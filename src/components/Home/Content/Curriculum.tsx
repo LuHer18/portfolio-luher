@@ -13,8 +13,14 @@ export const Curriculum = ({ title, subContent }: PropsCurriculum) => {
         <section className={style.curriculumContainer}>
             <h2 className='title2'>{title}</h2>
             <div className={style.buttonContainer}>
-                <button className={`button-text button-style ${style.buttonOrder} ${style.buttonCV}`}><IconCv />{subContent.viewCurriculum}</button>
                 <button className={`button-text button-style ${style.buttonOrder} `}><IconDownload />{subContent.download}</button>
+                <a
+                    className={`button-text  ${style.buttonOrder} ${style.aCv} `}
+                    href="https://curriculum-lh.netlify.app/" title="Enlace al curriculum"
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    <IconCv />{subContent.viewCurriculum}
+                </a>
             </div>
         </section>
     )
