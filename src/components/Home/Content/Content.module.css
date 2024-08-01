@@ -39,11 +39,11 @@
 
 .bg{
     background-color: var(--transparent-color);
-    border: 0.07rem solid;
+    border: 0.1rem var(--border-transparent) solid;
     border-radius: 1.6rem;
     padding: 3rem;
 }
-.yellowb{
+/* .yellowb{
     border-color: var(--yellow-color);
 }
 .redb{
@@ -51,7 +51,7 @@
 }
 .blueb{
     border-color: var(--bg-blue);
-}
+} */
 
 @media (max-width: 1025px) {
     .container {

@@ -2,14 +2,13 @@
     display:  flex;
     flex-direction: column;
     max-width: 39rem;
-    border: 0.005rem white solid;
+    border: 0.1rem var(--border-transparent) solid;
     border-radius: 0.8rem;
     background-color: var(--transparent-color);
 
 }
 .imgCard {
-    border-radius: 3rem;
-    padding: 2rem;
+    border-radius: 0.6rem;
 }
 
 

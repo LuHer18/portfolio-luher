@@ -6,6 +6,7 @@
     --red-color: #EA1E31;
     --blue-color: #135AE5;
     --transparent-color: rgba(3, 3, 16, 0.3);
+    --border-transparent: rgba(255, 255, 255, 0.3);
     --bg-red: #A50917;
     --bg-blue: #06338A;
     --bg-purple1: #3C0545;
@@ -27,6 +28,7 @@ html {
 body {
     background-color: #000;
     height: 100%;
+    overflow-x: hidden;
 }
 
 
