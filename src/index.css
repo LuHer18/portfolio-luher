@@ -49,6 +49,7 @@ body {
 
 .paragraph {
     font-family: var(--p-font);
+    color: #d3d3d3;
     font-size: 1.8rem;
 }
 
