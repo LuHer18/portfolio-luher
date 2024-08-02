@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import Modal from 'react-modal';
 import emailjs from '@emailjs/browser';
+import styleForm from './ModalContact.module.css'
 
 
 
@@ -41,14 +42,29 @@ export const ModalContact = ({ closeModal, modalIsOpen }: PropsModal) => {
         overlayClassName='modal-fondo'
       >
         <h2 className='title2'>Envíame un email</h2>
-        <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
+        <form className={styleForm.form} ref={form} onSubmit={sendEmail}>
+          <div className={styleForm.formInputs} >
+
+            <label className={styleForm.formLabel}>
+              <input className={`paragraph ${styleForm.formInput}`} type="text" name="user_name" placeholder=' ' />
+              <span className={`paragraph ${styleForm.formText}`}>Name</span>
+            </label>
+
+            <label className={styleForm.formLabel}>
+              <input className={`paragraph ${styleForm.formInput}`} type="email" name="user_email" placeholder=' ' />
+              <span className={`paragraph ${styleForm.formText}`}>Email</span>
+            </label>
+
+            <label className={styleForm.formLabel}>
+              <textarea className={`paragraph ${styleForm.formInput} ${styleForm.textArea}`} name="message" placeholder=' ' />
+              <span className={`paragraph ${styleForm.formText}`}>Message</span>
+            </label>
+
+          </div>
+
+
+
+          <input  type="submit" value="Send" className={`button-text button-style ${styleForm.formSubmit}`} />
         </form>
 
       </Modal>

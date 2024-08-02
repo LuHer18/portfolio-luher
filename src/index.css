@@ -102,14 +102,15 @@ body {
 }
 
 .modal {
-    background: #000;
-    border-radius: 5px;
+    background: rgba(3, 3, 16, 0.6);
+    backdrop-filter: blur(4px);
+    border-radius: 1.6rem;
     color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
     max-height: 62rem;
-    max-width: 50rem;
+    width: 50rem;
     outline: none;
     padding: 2rem;
 }
