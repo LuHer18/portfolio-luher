@@ -64,6 +64,10 @@ body {
     border: 0.05rem var(--text-color) solid;
     border-radius: 0.8rem;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.button-style:disabled{
+    background: gray;
 }
 
 
