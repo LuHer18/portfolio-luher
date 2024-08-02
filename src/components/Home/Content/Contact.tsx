@@ -4,9 +4,11 @@ import style from "./Contact.module.css"
 type PropsContact = {
     title: string,
     subContent: SubContentLanguage
+    openModal: ()=> void
 }
 
-export const Contact = ({title, subContent }: PropsContact) => {
+export const Contact = ({title, subContent, openModal }: PropsContact) => {
+
   return (
     <section className={style.contactContainer}>
         <h2 className='title2'>{title}</h2>
@@ -15,7 +17,7 @@ export const Contact = ({title, subContent }: PropsContact) => {
                 <p className="paragraph">{subContent.p1}</p>
                 <p className="paragraph">{subContent.p2}</p>
             </div>
-            <button className={`button-text button-style ${style.buttonSendEmail}`}>{subContent.sendEmailButton}</button>
+            <button onClick={openModal} className={`button-text button-style ${style.buttonSendEmail}`}>{subContent.sendEmailButton}</button>
         </div>
         
     </section>

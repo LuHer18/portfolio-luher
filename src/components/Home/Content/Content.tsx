@@ -5,7 +5,11 @@ import { Contact } from './Contact'
 import { Curriculum } from './Curriculum'
 import { About } from './About'
 import { Project } from './Project'
-export const Content = () => {
+
+type ContentProps = {
+  openModal: ()=> void
+}
+export const Content = ({openModal}: ContentProps) => {
   const context = useContext(LanguageContext)
   if (!context) {
     return null
@@ -17,7 +21,7 @@ export const Content = () => {
       <article className={`${style.bg} ${style.yellowb}`}><About title={titleLanguage.about} data ={data}/></article>
       <article className={`${style.bg} ${style.blueb}`}><Project title= {titleLanguage.project}/></article>
       <article className={`${style.bg} ${style.redb}`}>
-        <Contact title={titleLanguage.contact} subContent={subContentLanguage} />
+        <Contact title={titleLanguage.contact} openModal={openModal} subContent={subContentLanguage} />
       </article>
       <article className={`${style.bg} ${style.blueb}`}>
         <Curriculum title={titleLanguage.curriculum} subContent={subContentLanguage}/>
