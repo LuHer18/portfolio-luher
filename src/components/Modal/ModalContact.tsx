@@ -1,73 +1,87 @@
-import { useRef } from 'react';
+
 import Modal from 'react-modal';
-import emailjs from '@emailjs/browser';
-import styleForm from './ModalContact.module.css'
 
-
+import styleForm from './ModalContact.module.css';
+import { useControlForm } from '../../hooks/useControlForm';
 
 Modal.setAppElement('#root');
 
 type PropsModal = {
   closeModal: () => void;
   modalIsOpen: boolean;
-}
+};
+
 export const ModalContact = ({ closeModal, modalIsOpen }: PropsModal) => {
-  const form = useRef<HTMLFormElement | null>(null);
-
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(import.meta.env.VITE_SERVICE_iD, import.meta.env.VITE_TEMPLATE_ID, form.current as HTMLFormElement, {
-        publicKey: import.meta.env.VITE_PUBLIC_KEY,
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
-
+  const { form, errors, statusMessage, statusType, showForm, sendEmail } = useControlForm()
 
   return (
     <div>
-
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         className='modal'
         overlayClassName='modal-fondo'
       >
-        <h2 className='title2'>Envíame un email</h2>
-        <form className={styleForm.form} ref={form} onSubmit={sendEmail}>
-          <div className={styleForm.formInputs} >
+        {showForm ? (
+          <>
+            <h2 className='title2'>Envíame un email</h2>
+            <form className={styleForm.form} ref={form} onSubmit={sendEmail}>
+              <div className={styleForm.formInputs}>
+                <label className={`${styleForm.formLabel} ${errors.name ? styleForm.error : ''}`}>
+                  <input
+                    className={`paragraph ${styleForm.formInput} ${errors.name ? styleForm.error : ''}`}
+                    type="text"
+                    name="user_name"
+                    placeholder=' '
+                  />
+                  <span className={`paragraph ${styleForm.formText} ${errors.name ? styleForm.error : ''}`}>
+                    Name
+                  </span>
+                  {errors.name && <span className={styleForm.formError}>{errors.name}</span>}
+                </label>
 
-            <label className={styleForm.formLabel}>
-              <input className={`paragraph ${styleForm.formInput}`} type="text" name="user_name" placeholder=' ' />
-              <span className={`paragraph ${styleForm.formText}`}>Name</span>
-            </label>
+                <label className={`${styleForm.formLabel} ${errors.email ? styleForm.error : ''}`}>
+                  <input
+                    className={`paragraph ${styleForm.formInput} ${errors.email ? styleForm.error : ''}`}
+                    type="email"
+                    name="user_email"
+                    placeholder=' '
+                  />
+                  <span className={`paragraph ${styleForm.formText} ${errors.email ? styleForm.error : ''}`}>
+                    Email
+                  </span>
+                  {errors.email && <span className={styleForm.formError}>{errors.email}</span>}
+                </label>
 
-            <label className={styleForm.formLabel}>
-              <input className={`paragraph ${styleForm.formInput}`} type="email" name="user_email" placeholder=' ' />
-              <span className={`paragraph ${styleForm.formText}`}>Email</span>
-            </label>
+                <label className={`${styleForm.formLabel} ${errors.message ? styleForm.error : ''}`}>
+                  <textarea
+                    className={`paragraph ${styleForm.formInput} ${styleForm.textArea} ${errors.message ? styleForm.error : ''}`}
+                    name="message"
+                    placeholder=' '
+                  />
+                  <span className={`paragraph ${styleForm.formText} ${errors.message ? styleForm.error : ''}`}>
+                    Message
+                  </span>
+                  {errors.message && <span className={styleForm.formError}>{errors.message}</span>}
+                </label>
+              </div>
 
-            <label className={styleForm.formLabel}>
-              <textarea className={`paragraph ${styleForm.formInput} ${styleForm.textArea}`} name="message" placeholder=' ' />
-              <span className={`paragraph ${styleForm.formText}`}>Message</span>
-            </label>
-
-          </div>
-
-
-
-          <input  type="submit" value="Send" className={`button-text button-style ${styleForm.formSubmit}`} />
-        </form>
-
+              <input
+                type="submit"
+                value="Send"
+                className={`button-text button-style ${styleForm.formSubmit}`}
+              />
+            </form>
+          </>
+        ) : (
+          statusMessage && (
+            <div className={` ${styleForm.statusMessage} ${statusType === 'success' ? styleForm.statusSuccess : styleForm.statusError}`}>
+              {statusMessage}
+            </div>
+          )
+        )}
       </Modal>
     </div>
   );
-}
+};
+

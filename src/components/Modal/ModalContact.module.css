@@ -50,10 +50,30 @@
     height: 7rem;
 }
 
+.formLabel.error .formText {
+    color: var(--red-color);
+    transform: translateY(-70%) scale(.7); 
+}
+
 .formInput:focus+.formText,
 .formInput:not(:placeholder-shown)+.formText {
     background-color: transparent;
     transform: translateY(-70%) scale(.7);
+}
+
+.formError {
+    color: var(--red-color);
+    font-family: var(--p-font);
+    font-size: 1.5rem;
+    display: block;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    position: relative;
+}
+
+.error {
+    color: var(--red-color);
+    position: relative;
 }
 
 
@@ -63,4 +83,29 @@
     display: inline-block;
     padding: 1rem 2rem;
     width: 100%;
+}
+
+.statusMessage {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-family: var(--p-font);
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statusSuccess {
+    color: green;
+    background-color: rgba(0, 255, 0, 0.1);
+    border: 1px solid green;
+}
+
+.statusError {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 1px solid red;
 }
