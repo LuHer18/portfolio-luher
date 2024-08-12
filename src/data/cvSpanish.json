@@ -346,6 +346,41 @@
         ]
       },
       "conclusion": "El proyecto Popcorn ha mejorado mis habilidades con React y React-router-dom. La implementación de skeleton custom realizado con TailwindCSS el cual potencia mis habilidades en diseño UI."
+    },
+    {
+      "name": "Translator",
+      "image": "translator",
+      "isActive": true,
+      "description": "Podras traducir a diferentes idiomas con esta APP. La traducción se logra consumiendo la API de Deepl.",
+      "highlights": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "url": "https://traslatorapp.vercel.app",
+      "urlGitHub": "https://github.com/LuHer18/translatorapp",
+      "ideasPlanning": {
+        "inspiration": "Basado en el diseño de Google translate. ",
+        "mainFunctions": [
+          "Traducción en tiempo real del texto escrito a un idioma seleccionado.",
+          "Detectar automáticamente el idioma en el que se escribe el mensaje.",
+          "Uso de un debounce para disminuir la cantidad de llamadas a la API."
+        ]
+      },
+      "implementationFunctionalities": [
+        "Diseño responsivo con TailwindCSS",
+        "Modo claro y modo oscuro."
+      ],
+      "testingDeployment": [
+        "Despliegue Frontend en Vercel"
+      ],
+      "lessonsImprovements": {
+        "lessonsLearned": "Uso e importancia de un debounce.",
+        "futureImprovements": [
+          "Implementar el uso de más idiomas y traducción de documento importado. "
+        ]
+      },
+      "conclusion": "El proyecto Translator app me permitió aprender a optimizar las peticiones a una API por medio de un debounce, adicionalmente aprendí a implementar el modo oscuro en Tailwind CSS."
     }
   ]
 }

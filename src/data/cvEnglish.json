@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Luis Herrera C",
-    "label": "Desarrollador FrontEnd",
-    "image": "",
+    "label": "FrontEnd Developer",
+    "image": "/profile.webp",
     "email": "luis1818.lh@gmail.com",
     "phone": "+57 3043685757",
     "url": "",
-    "summary": ["+ 4 años de experiencia como Ingeniero Industrial especializado en compras. Actualmente, soy Desarrollador Frontend con habilidades en frameworks, diseño responsivo, creación y consumo de APIs, pruebas de código y control de versiones.", "Mi experiencia anterior me ha dotado de competencias transferibles al desarrollo web, como la optimización de procesos, la resolución de problemas y la gestión de proyectos. Dispuesto a aplicar mis conocimientos técnicos y mi experiencia en un entorno de desarrollo web, contribuyendo con soluciones innovadoras y eficientes."],
+    "summary": ["+ 4 years of experience as an Industrial Engineer specialized in purchasing. Currently, I am a Frontend Developer with skills in frameworks, responsive design, API creation and consumption, code testing, and version control.", "My previous experience has provided me with transferable skills to web development, such as process optimization, problem-solving, and project management. I am eager to apply my technical knowledge and experience in a web development environment, contributing with innovative and efficient solutions."],
     "location": {
       "address": "",
       "postalCode": "130001",
@@ -44,8 +44,8 @@
     {
       "institution": "Universidad Tecnologica de Bolívar",
       "url": "https://www.utb.edu.co/",
-      "area": "Ingeniero Industrial",
-      "studyType": "Título universitario",
+      "area": "Industrial Engineering",
+      "studyType": "University Degree",
       "startDate": "2013-01-30",
       "endDate": "2017-07-26",
       "score": "4.08"
@@ -53,31 +53,31 @@
   ],
   "certificates": [
     {
-      "name": "React: De cero a experto (Hooks y MERN)",
+      "name": "React: From Zero to Expert (Hooks and MERN)",
       "date": "2024-05-15",
       "issuer": "Udemy",
       "url": "https://ude.my/UC-56807ac5-6360-473f-aa49-041001a94755"
     },
     {
-      "name": "Curso de React.js con Vite.js y TailwindCSS",
+      "name": "React.js with Vite.js and TailwindCSS Course",
       "date": "2023-12-19",
       "issuer": "Platzi",
       "url": "https://platzi.com/p/Luher/curso/7396-react-vite-tailwindcss/diploma/detalle/"
     },
     {
-      "name": "Curso Práctico de JavaScript",
+      "name": "Practical JavaScript Course",
       "date": "2023-08-24",
       "issuer": "Platzi",
       "url": "https://platzi.com/p/Luher/curso/3271-javascript-practico/diploma/detalle/"
     },
     {
-      "name": "Curso Definitivo de HTML y CSS",
+      "name": "Ultimate HTML and CSS Course",
       "date": "2023-08-02",
       "issuer": "Platzi",
       "url": "https://platzi.com/p/Luher/curso/2008-html-css/diploma/detalle/"
     },
     {
-      "name": "Curso Profesional de Git y GitHub",
+      "name": "Professional Git and GitHub Course",
       "date": "2023-06-13",
       "issuer": "Platzi",
       "url": "https://platzi.com/p/Luher/curso/1557-git-github/diploma/detalle/"
@@ -86,9 +86,9 @@
   "skills": [
     {
       "name": "React",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend",
         "JavaScript Library",
         "UI"
@@ -96,9 +96,9 @@
     },
     {
       "name": "JavaScript",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend",
         "Backend",
         "Fullstack"
@@ -106,9 +106,9 @@
     },
     {
       "name": "TypeScript",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend",
         "Backend",
         "Fullstack"
@@ -116,80 +116,80 @@
     },
     {
       "name": "Node.js",
-      "level": "Básico",
+      "level": "Basic",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Backend",
         "Fullstack"
       ]
     },
     {
       "name": "Express.js",
-      "level": "Básico",
+      "level": "Basic",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Backend",
         "Fullstack"
       ]
     },
     {
       "name": "HTML",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend"
       ]
     },
     {
       "name": "CSS",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend",
-        "Diseño Responsive"
+        "Responsive Design"
       ]
     },
     {
       "name": "Tailwind",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend",
         "CSS Framework",
-        "Diseño Responsive"
+        "Responsive Design"
       ]
     },
     {
       "name": "Material UI",
-      "level": "Básico",
+      "level": "Basic",
       "keywords": [
-        "Desarrollo Web",
+        "Web Development",
         "Frontend",
         "CSS Framework",
-        "Diseño Responsive"
+        "Responsive Design"
       ]
     },
     {
       "name": "MongoDB",
-      "level": "Básico",
+      "level": "Basic",
       "keywords": [
-        "Base de datos",
+        "Database",
         "Backend",
         "NoSQL"
       ]
     },
     {
       "name": "SQL",
-      "level": "Básico",
+      "level": "Basic",
       "keywords": [
-        "Base de datos",
+        "Database",
         "Backend",
         "SQL"
       ]
     },
     {
       "name": "Jest",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
         "Testing",
         "Frontend"
@@ -197,7 +197,7 @@
     },
     {
       "name": "React Testing Library",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
         "Testing",
         "Frontend"
@@ -205,31 +205,31 @@
     },
     {
       "name": "Git",
-      "level": "Intermedio",
+      "level": "Intermediate",
       "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente"
+        "Version Control",
+        "Collaboration",
+        "Source Code"
       ]
     },
     {
       "name": "GitHub",
-      "level": "Avanzado",
+      "level": "Advanced",
       "keywords": [
-        "Control de Versiones",
-        "Colaboración",
-        "Código Fuente",
+        "Version Control",
+        "Collaboration",
+        "Source Code",
         "Git"
       ]
     }
   ],
   "languages": [
     {
-      "language": "Español",
-      "fluency": "Nativo"
+      "language": "Spanish",
+      "fluency": "Native"
     },
     {
-      "language": "Inglés",
+      "language": "English",
       "fluency": "B1"
     }
   ],
@@ -238,7 +238,7 @@
       "name": "Calendar",
       "image": "calendar",
       "isActive": true,
-      "description": "Crea eventos, revisa y actualiza tu agenda, se más productivo.",
+      "description": "Create events, check and update your schedule, be more productive.",
       "highlights": [
         "React",
         "Bootstrap",
@@ -249,35 +249,35 @@
       "url": "https://calendar-ebon-seven.vercel.app/",
       "urlGitHub": "https://github.com/LuHer18/calendar",
       "ideasPlanning": {
-        "inspiration": "Basado en aplicaciones como Google Calendar",
+        "inspiration": "Based on apps like Google Calendar",
         "mainFunctions": [
-          "Crear, editar, y eliminar eventos del calendario",
-          "Visualizar en manera de agenda los eventos creados"
+          "Create, edit, and delete calendar events",
+          "View created events in an agenda format"
         ]
       },
       "implementationFunctionalities": [
-        "Implementación de JWT",
-        "Diseño responsivo con Bootstrap y librería react-big-calendar para el diseño del calendario",
-        "Peticiones API manejadas con axios"
+        "JWT implementation",
+        "Responsive design with Bootstrap and react-big-calendar library for calendar design",
+        "API requests handled with axios"
       ],
       "testingDeployment": [
-        "Pruebas Unitarias y de integración con Jest y React Testing Library",
-        "Despliegue Frontend en Vercel y Backend con Render"
+        "Unit and integration tests with Jest and React Testing Library",
+        "Frontend deployment on Vercel and Backend with Render"
       ],
       "lessonsImprovements": {
-        "lessonsLearned": "Mejor gestión del estado y experiencia en despliegue continuo",
+        "lessonsLearned": "Better state management and experience with continuous deployment",
         "futureImprovements": [
-          "Implementar notificaciones",
-          "Funcionalidades colaborativas"
+          "Implement notifications",
+          "Collaborative features"
         ]
       },
-      "conclusion": "El proyecto Calendar ha mejorado mis habilidades con React y Redux, con lo cual he logrado manejar de manera eficiente el estado global de mis aplicaciones. A su vez, se ha visto mejorada mi manera de generar autenticaciones con la ayuda de los JWT."
+      "conclusion": "The Calendar project has improved my skills with React and Redux, allowing me to efficiently manage the global state of my applications. Additionally, it has enhanced my approach to generating authentications with the help of JWTs."
     },
     {
       "name": "Viva Color",
       "image": "viva-color",
       "isActive": true,
-      "description": "Genera paletas de colores ideales para tus sitios webs",
+      "description": "Generate color palettes ideal for your websites",
       "highlights": [
         "React",
         "Tailwind CSS",
@@ -286,35 +286,35 @@
       "url": "https://viva-color-app.netlify.app",
       "urlGitHub": "https://github.com/LuHer18/viva-color-app",
       "ideasPlanning": {
-        "inspiration": "Basado en aplicaciones como Amazon Prime Video",
+        "inspiration": "Based on apps like Amazon Prime Video",
         "mainFunctions": [
-          "Página con películas y series principales",
-          "Buscar películas y series",
-          "Visualizar trailers y una breve descripción de las películas y series"
+          "Page with main movies and series",
+          "Search for movies and series",
+          "View trailers and a brief description of movies and series"
         ]
       },
       "implementationFunctionalities": [
-        "Diseño responsivo con TailwindCSS",
-        "Peticiones API manejadas con fetch nativo",
-        "Gestión de páginas mediante React Router Dom"
+        "Responsive design with TailwindCSS",
+        "API requests handled with native fetch",
+        "Page management with React Router Dom"
       ],
       "testingDeployment": [
-        "Pruebas Unitarias y de integración con Jest y React Testing Library"
+        "Unit and integration tests with Jest and React Testing Library"
       ],
       "lessonsImprovements": {
-        "lessonsLearned": "Mejor gestión del uso de React Router",
+        "lessonsLearned": "Better management of React Router usage",
         "futureImprovements": [
-          "Implementar clasificación de películas por filtrado en el home",
-          "Generar paginación"
+          "Implement movie classification by filtering on the home page",
+          "Add pagination"
         ]
       },
-      "conclusion": "El proyecto Popcorn ha mejorado mis habilidades con React y React-router-dom. La implementación de skeleton custom realizado con TailwindCSS el cual potencia mis habilidades en diseño UI."
+      "conclusion": "The Viva Color project has improved my skills with React and React-router-dom. The implementation of a custom skeleton with TailwindCSS has enhanced my UI design skills."
     },
     {
       "name": "PopCorn Film",
       "image": "popcorn-film",
       "isActive": true,
-      "description": "Busca trailers de tus películas y series favoritas. Construida con información obtenida por la API de TMDB",
+      "description": "Search for trailers of your favorite movies and series. Built with information obtained from the TMDB API",
       "highlights": [
         "React",
         "Tailwind CSS",
@@ -323,29 +323,64 @@
       "url": "https://popcorn-film.vercel.app",
       "urlGitHub": "https://github.com/LuHer18/popcorn-film",
       "ideasPlanning": {
-        "inspiration": "Basado en aplicaciones como Amazon Prime Video",
+        "inspiration": "Based on apps like Amazon Prime Video",
         "mainFunctions": [
-          "Página con películas y series principales",
-          "Buscar películas y series",
-          "Visualizar trailers y una breve descripción de las películas y series"
+          "Page with main movies and series",
+          "Search for movies and series",
+          "View trailers and a brief description of movies and series"
         ]
       },
       "implementationFunctionalities": [
-        "Diseño responsivo con TailwindCSS",
-        "Peticiones API manejadas con fetch nativo",
-        "Gestión de páginas mediante React Router Dom"
+        "Responsive design with TailwindCSS",
+        "API requests handled with native fetch",
+        "Page management with React Router Dom"
       ],
       "testingDeployment": [
-        "Despliegue Frontend en Vercel"
+        "Frontend deployment on Vercel"
       ],
       "lessonsImprovements": {
-        "lessonsLearned": "Mejor gestión del uso de React Router",
+        "lessonsLearned": "Better management of React Router usage",
         "futureImprovements": [
-          "Implementar clasificación de películas por filtrado en el home",
-          "Generar paginación"
+          "Implement movie classification by filtering on the home page",
+          "Add pagination"
         ]
       },
-      "conclusion": "El proyecto Popcorn ha mejorado mis habilidades con React y React-router-dom. La implementación de skeleton custom realizado con TailwindCSS el cual potencia mis habilidades en diseño UI."
+      "conclusion": "The Popcorn project has improved my skills with React and React-router-dom. The implementation of a custom skeleton with TailwindCSS has enhanced my UI design skills."
+    },
+    {
+      "name": "Translator",
+      "image": "translator",
+      "isActive": true,
+      "description": "You can translate into different languages with this APP. Translation is achieved by consuming the Deepl API.",
+      "highlights": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "url": "https://traslatorapp.vercel.app",
+      "urlGitHub": "https://github.com/LuHer18/translatorapp",
+      "ideasPlanning": {
+        "inspiration": "Based on the design of Google Translate.",
+        "mainFunctions": [
+          "Real-time translation of written text to a selected language.",
+          "Automatically detect the language in which the message is written.",
+          "Use of debounce to reduce the number of API calls."
+        ]
+      },
+      "implementationFunctionalities": [
+        "Responsive design with TailwindCSS",
+        "Light mode and dark mode."
+      ],
+      "testingDeployment": [
+        "Frontend deployment on Vercel"
+      ],
+      "lessonsImprovements": {
+        "lessonsLearned": "Use and importance of debounce.",
+        "futureImprovements": [
+          "Implement more languages and document translation."
+        ]
+      },
+      "conclusion": "The Translator app project allowed me to learn how to optimize API requests using debounce. Additionally, I learned to implement dark mode in Tailwind CSS."
     }
   ]
 }
