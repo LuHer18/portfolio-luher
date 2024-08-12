@@ -5,6 +5,7 @@ import { Contact } from './Contact'
 import { Curriculum } from './Curriculum'
 import { About } from './About'
 import { Project } from './Project'
+import { Skills } from './Skills'
 
 type ContentProps = {
   openModal: ()=> void
@@ -26,7 +27,7 @@ export const Content = ({openModal}: ContentProps) => {
       <article className={`${style.bg} ${style.blueb}`}>
         <Curriculum title={titleLanguage.curriculum} subContent={subContentLanguage}/>
       </article>
-      <article className={`${style.bg} ${style.yellowb}`}><h2 className='title2'>{titleLanguage.skills}</h2></article>
+      <article className={`${style.bg} ${style.yellowb}`}><Skills title = {titleLanguage.skills} data ={data} /></article>
     </section>
   )
 }

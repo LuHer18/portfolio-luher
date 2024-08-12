@@ -108,7 +108,8 @@ export interface LessonsImprovements {
 
 export interface Skill {
     name:     string;
-    level:    string
+    image:    string;
+    level:    string;
     keywords: string[];
 }
 

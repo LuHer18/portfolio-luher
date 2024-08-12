@@ -86,6 +86,7 @@
   "skills": [
     {
       "name": "React",
+      "image": "React",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -96,6 +97,7 @@
     },
     {
       "name": "JavaScript",
+      "image": "JavaScript",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -106,6 +108,7 @@
     },
     {
       "name": "TypeScript",
+      "image": "TypeScript",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -116,6 +119,7 @@
     },
     {
       "name": "Node.js",
+      "image": "Node",
       "level": "Basic",
       "keywords": [
         "Web Development",
@@ -125,6 +129,7 @@
     },
     {
       "name": "Express.js",
+      "image": "Express",
       "level": "Basic",
       "keywords": [
         "Web Development",
@@ -134,6 +139,7 @@
     },
     {
       "name": "HTML",
+      "image": "HTML",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -142,6 +148,7 @@
     },
     {
       "name": "CSS",
+      "image": "CSS",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -151,6 +158,7 @@
     },
     {
       "name": "Tailwind",
+      "image": "Tailwind",
       "level": "Intermediate",
       "keywords": [
         "Web Development",
@@ -161,6 +169,7 @@
     },
     {
       "name": "Material UI",
+      "image": "MaterialUi",
       "level": "Basic",
       "keywords": [
         "Web Development",
@@ -171,6 +180,7 @@
     },
     {
       "name": "MongoDB",
+      "image": "MongoDb",
       "level": "Basic",
       "keywords": [
         "Database",
@@ -179,47 +189,13 @@
       ]
     },
     {
-      "name": "SQL",
+      "name": "MySQL",
+      "image": "MySql",
       "level": "Basic",
       "keywords": [
         "Database",
         "Backend",
         "SQL"
-      ]
-    },
-    {
-      "name": "Jest",
-      "level": "Intermediate",
-      "keywords": [
-        "Testing",
-        "Frontend"
-      ]
-    },
-    {
-      "name": "React Testing Library",
-      "level": "Intermediate",
-      "keywords": [
-        "Testing",
-        "Frontend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Advanced",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
       ]
     }
   ],
