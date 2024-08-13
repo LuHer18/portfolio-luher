@@ -5,7 +5,8 @@ export const subContentSpanish: SubContentLanguage = {
     p2: "¡Hablemos!",
     sendEmailButton: "Envíame un email",
     viewCurriculum: "Ver CV",
-    download: "Descargar"
+    download: "Descargar",
+    project: "Ver proyectos"
 }
 
 export const subContentEnglish: SubContentLanguage = {
@@ -13,5 +14,6 @@ export const subContentEnglish: SubContentLanguage = {
     p2: "Let's talk!",
     sendEmailButton: "Send me an email",
     viewCurriculum: "View CV",
-    download: "Download"
+    download: "Download",
+    project: "View projects"
 }

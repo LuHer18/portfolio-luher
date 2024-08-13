@@ -19,6 +19,7 @@ export interface SubContentLanguage {
     sendEmailButton: string;
     viewCurriculum: string;
     download: string;
+    project: string;
 }
 
 //tipado del archivo JSON con la CV
