@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 13rem;
+}
+
+.slider{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .slideTrack {
+    display: flex;
+    gap: 1rem;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(14rem * 22);
+}
+
+.slider .slide {
+    width: 14rem;
+    
+}
+
+.slider .slide img {
+    width: 100%;
+    
+}
+
+@keyframes scroll {
+    0%{
+        transform: translate(0);
+        -webkit-transform: translateX(0);
+        
+    }
+    100%{
+        transform: translate(calc(-14rem * 11 ));
+        -webkit-transform: translateX(calc(-14rem * 11 ));
+        
+    }
+}
+
+@media (max-width: 1025px){
+    .container{
+        gap: 8rem;
+    }
+}
