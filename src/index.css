@@ -30,7 +30,9 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
-
+a{
+    text-decoration: none;
+}
 
 .title1 {
     font-family: var(--title-font);

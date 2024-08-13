@@ -20,6 +20,7 @@ export const NavBar = () => {
   const iconNavbar: IconNavbar = { IconAvatar, IconAbout, IconProjects }
 
   return (
+    <>
     <footer className={style.footer}>
       <section className={style.containerNav}>
         <nav className={style.nav}>
@@ -50,7 +51,9 @@ export const NavBar = () => {
           </ul>
         </nav>
       </section>
-      <MobileNavBar />
+      
     </footer>
+    <MobileNavBar navLanguage = {navLanguage} handleLanguage = {handleLanguage} language= {language} />
+    </>
   )
 }
