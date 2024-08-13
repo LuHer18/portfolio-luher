@@ -1,0 +1,32 @@
+.buttonMobile {
+    display: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    border: 0.1rem white solid;
+
+}
+
+.styleMobileNavBar.container {
+    display: none;
+
+}
+
+
+
+@media (max-width: 1025px){
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .buttonMobile {
+        display: flex;
+        align-items: flex-end;
+    }
+
+
+}
