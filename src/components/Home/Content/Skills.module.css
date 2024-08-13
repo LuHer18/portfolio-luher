@@ -42,7 +42,23 @@
 }
 
 @media (max-width: 1025px){
-    .container{
-        gap: 8rem;
+
+    .slider .slideTrack {
+        width: calc(8rem * 22);
     }
+
+    @keyframes scroll {
+        0%{
+            transform: translate(0);
+            -webkit-transform: translateX(0);
+            
+        }
+        100%{
+            transform: translate(calc(-10rem * 11 ));
+            -webkit-transform: translateX(calc(-10rem * 11 ));
+            
+        }
+    }
+
+
 }
