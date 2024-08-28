@@ -9,7 +9,7 @@ import { englishform, spanishForm } from "../data/formLanguage"
 
 
 export const LanguageProvider = ({ children }: PropsWithChildren) => {
-    const [language, setLanguage] = useState("es")
+    const [language, setLanguage] = useState(localStorage.getItem("language") || "es")
     const [data, setData] = useState<Curriculum | null>(null)
 
     const navLanguage = (language === "es") ? spanishNav : englishNav
@@ -44,12 +44,10 @@ export const LanguageProvider = ({ children }: PropsWithChildren) => {
 
 
     const handleLanguage = () => {
-        if (language === "es") {
-            setLanguage("en")
-        } else {
-            setLanguage("es")
-        }
-    }
+        const newLanguage = (language === "es") ? "en" : "es";
+        setLanguage(newLanguage);
+        localStorage.setItem("language", newLanguage); // Guardar en localStorage
+    };
     return (
         <LanguageContext.Provider value={
             {
