@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Layout } from "../Layout"
 import { LanguageContext } from "../context/LanguageContext";
+import styleAbout from "./About.module.css"
 
 
 export const About = () => {
@@ -14,14 +15,19 @@ export const About = () => {
   return (
     <Layout>
       <h1 className="title1">{title.about}</h1>
-      {
-        paragraphs.map((p, index) => {
-          return(
-            <p className="paragraph" key={index}>{p}</p>
-          )
-        })
-      }
+      <article className={styleAbout.containerAbout}>
+        <img className={styleAbout.imgMe} src="./assets/me.webp" alt="me" />
+        <div className={styleAbout.contentText}>
+          {
+            paragraphs.map((p, index) => {
+              return (
+                <p className={`paragraph ${styleAbout.text}`} key={index}>{p}</p>
+              )
+            })
+          }
+        </div>
+      </article>
     </Layout>
-    
+
   )
 }
