@@ -43,15 +43,6 @@
     border-radius: 1.6rem;
     padding: 3rem;
 }
-/* .yellowb{
-    border-color: var(--yellow-color);
-}
-.redb{
-    border-color: var(--red-color);
-}
-.blueb{
-    border-color: var(--bg-blue);
-} */
 
 @media (max-width: 1025px) {
     .container {

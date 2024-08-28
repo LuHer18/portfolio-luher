@@ -5,6 +5,7 @@ import { titleEnglish, titleSpanish } from "../data/titleLanguage"
 import { subContentEnglish, subContentSpanish } from "../data/subContent"
 import { Curriculum } from "../type"
 import { englishParagraphs, spanishParagraphs } from "../data/aboutContent"
+import { englishform, spanishForm } from "../data/formLanguage"
 
 
 export const LanguageProvider = ({ children }: PropsWithChildren) => {
@@ -15,6 +16,7 @@ export const LanguageProvider = ({ children }: PropsWithChildren) => {
     const titleLanguage = (language === "es") ? titleSpanish : titleEnglish
     const subContentLanguage = (language === "es") ? subContentSpanish : subContentEnglish
     const aboutLanguage = (language === "es") ? spanishParagraphs : englishParagraphs
+    const formLanguage = (language === "es") ? spanishForm : englishform
 
     useEffect(() => {
         const loadJson = async () => {
@@ -57,6 +59,7 @@ export const LanguageProvider = ({ children }: PropsWithChildren) => {
                 titleLanguage,
                 subContentLanguage,
                 aboutLanguage,
+                formLanguage,
                 handleLanguage
             }}>
             {children}

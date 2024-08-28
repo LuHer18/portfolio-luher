@@ -1,15 +1,18 @@
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import { FormLanguage } from '../type';
 
 
 
-export const useControlForm = () => {
+export const useControlForm = (formLanguage: FormLanguage) => {
 
     const form = useRef<HTMLFormElement | null>(null);
     const [errors, setErrors] = useState<{ [key: string]: string }>({});
     const [statusMessage, setStatusMessage] = useState<string | null>(null);
     const [statusType, setStatusType] = useState<'success' | 'error' | null>(null);
     const [showForm, setShowForm] = useState(true);
+    const required = formLanguage.required
+    const status = formLanguage.statusMessage
 
     const validateForm = (): boolean => {
         const name = form.current?.user_name.value.trim();
@@ -21,15 +24,15 @@ export const useControlForm = () => {
 
         if (!name) {
             valid = false;
-            newErrors.name = 'Name is required';
+            newErrors.name = required.nameRequired;
         }
         if (!email || !/\S+@\S+\.\S+/.test(email)) {
             valid = false;
-            newErrors.email = 'Valid email is required';
+            newErrors.email = required.emailRequired;
         }
         if (!message) {
             valid = false;
-            newErrors.message = 'Message is required';
+            newErrors.message = required.messageRequired;
         }
 
         setErrors(newErrors);
@@ -51,11 +54,11 @@ export const useControlForm = () => {
             })
             .then(
                 () => {
-                    setStatusMessage('Email sent successfully!');
+                    setStatusMessage(status.success);
                     setStatusType('success');
                 },
                 (error) => {
-                    setStatusMessage('Failed to send email.');
+                    setStatusMessage(status.error);
                     console.log(error)
                     setStatusType('error');
                 },

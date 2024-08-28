@@ -1,5 +1,5 @@
 import { createContext } from "react";
-import { Curriculum, DataNav, SubContentLanguage, TitleLanguage } from "../type";
+import { Curriculum, DataNav, FormLanguage, SubContentLanguage, TitleLanguage } from "../type";
 
 export interface LanguageContext {
     language: string;
@@ -8,6 +8,7 @@ export interface LanguageContext {
     navLanguage: DataNav[];
     subContentLanguage: SubContentLanguage;
     aboutLanguage: string[];
+    formLanguage: FormLanguage;
     handleLanguage: () => void
 }
 

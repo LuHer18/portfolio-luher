@@ -3,6 +3,9 @@ import Modal from 'react-modal';
 
 import styleForm from './ModalContact.module.css';
 import { useControlForm } from '../../hooks/useControlForm';
+import { useContext } from 'react';
+import { LanguageContext } from '../../context/LanguageContext';
+import { FormLanguage } from '../../type';
 
 Modal.setAppElement('#root');
 
@@ -12,7 +15,13 @@ type PropsModal = {
 };
 
 export const ModalContact = ({ closeModal, modalIsOpen }: PropsModal) => {
-  const { form, errors, statusMessage, statusType, showForm, sendEmail } = useControlForm()
+  const context = useContext(LanguageContext);
+  
+  const formLanguage = context?.formLanguage
+  const { form, errors, statusMessage, statusType, showForm, sendEmail } = useControlForm(formLanguage as FormLanguage)
+
+  
+
 
   return (
     <div>
@@ -35,7 +44,7 @@ export const ModalContact = ({ closeModal, modalIsOpen }: PropsModal) => {
                     placeholder=' '
                   />
                   <span className={`paragraph ${styleForm.formText} ${errors.name ? styleForm.error : ''}`}>
-                    Name
+                    {formLanguage?.name}
                   </span>
                   {errors.name && <span className={styleForm.formError}>{errors.name}</span>}
                 </label>
@@ -48,7 +57,7 @@ export const ModalContact = ({ closeModal, modalIsOpen }: PropsModal) => {
                     placeholder=' '
                   />
                   <span className={`paragraph ${styleForm.formText} ${errors.email ? styleForm.error : ''}`}>
-                    Email
+                  {formLanguage?.email}
                   </span>
                   {errors.email && <span className={styleForm.formError}>{errors.email}</span>}
                 </label>
@@ -60,7 +69,7 @@ export const ModalContact = ({ closeModal, modalIsOpen }: PropsModal) => {
                     placeholder=' '
                   />
                   <span className={`paragraph ${styleForm.formText} ${errors.message ? styleForm.error : ''}`}>
-                    Message
+                  {formLanguage?.message}
                   </span>
                   {errors.message && <span className={styleForm.formError}>{errors.message}</span>}
                 </label>
@@ -68,7 +77,7 @@ export const ModalContact = ({ closeModal, modalIsOpen }: PropsModal) => {
 
               <input
                 type="submit"
-                value="Send"
+                value={formLanguage?.send}
                 className={`button-text button-style ${styleForm.formSubmit}`}
               />
             </form>

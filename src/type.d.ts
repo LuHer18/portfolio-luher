@@ -125,3 +125,23 @@ export interface Work {
     summary:    string;
     highlights: string[];
 }
+
+export interface FormLanguage {
+    name:          string;
+    email:         string;
+    message:       string;
+    required:      Required;
+    statusMessage: StatusMessage;
+    send: string;
+}
+
+export interface Required {
+    nameRequired:    string;
+    emailRequired:   string;
+    messageRequired: string;
+}
+
+export interface StatusMessage {
+    success: string;
+    error:   string;
+}
