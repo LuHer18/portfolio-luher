@@ -7,7 +7,8 @@ export interface LanguageContext {
     titleLanguage: TitleLanguage;
     navLanguage: DataNav[];
     subContentLanguage: SubContentLanguage;
-    handleLanguage: ()=> void
+    aboutLanguage: string[];
+    handleLanguage: () => void
 }
 
-export const LanguageContext = createContext <LanguageContext | undefined>(undefined)
+export const LanguageContext = createContext<LanguageContext | undefined>(undefined)
