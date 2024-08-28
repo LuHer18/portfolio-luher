@@ -20,8 +20,13 @@
 
 .slider .slide {
     width: 14rem;
+    border: var(--yellow-color) 0.3rem solid ;
+    border-radius: 50%;
+    padding: 3rem;
     
 }
+
+
 
 .slider .slide img {
     width: 100%;
@@ -44,7 +49,7 @@
 @media (max-width: 1025px){
 
     .slider .slideTrack {
-        width: calc(8rem * 22);
+        width: calc(12rem * 22);
     }
 
     @keyframes scroll {
