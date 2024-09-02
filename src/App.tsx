@@ -1,6 +1,6 @@
 
 import { RouterApp } from "./router"
-import { Bg, NavBar } from "./components"
+import { NavBar } from "./components"
 import { LanguageProvider } from "./context/LanguageProvider"
 
 
@@ -15,7 +15,7 @@ function App() {
           <RouterApp />
           <NavBar />
         </LanguageProvider>
-        <Bg/>
+        {/* <Bg/> */}
       
 
     </>

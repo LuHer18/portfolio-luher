@@ -3,10 +3,11 @@ import { Demo, GitHub } from '../Icons'
 import styleCard from './CardProject.module.css'
 
 
+
 export const CardProject = (project: Project) => {
 
 
-  const urlImage = `/assets/${project.image}.webp`
+  const urlImage = `../../../assets/${project.image}.webp`
 
   return (
     <article className={styleCard.cardContainer}>
