@@ -14,7 +14,7 @@ export const Projects = () => {
   const data = context.data;
   return (
     <Layout>
-      <h1 className="title1">{title.project}</h1>
+      <h1 className={styleProjects.title}>{title.project}</h1>
       <main className={styleProjects.cardMain}>
         {
           data?.projects.map(project => (

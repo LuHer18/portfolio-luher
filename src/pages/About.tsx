@@ -14,14 +14,14 @@ export const About = () => {
 
   return (
     <Layout>
-      <h1 className="title1">{title.about}</h1>
+      <h1 className={styleAbout.title}>{title.about}</h1>
       <article className={styleAbout.containerAbout}>
         <img className={styleAbout.imgMe} src="./assets/me.webp" alt="me" />
         <div className={styleAbout.contentText}>
           {
             paragraphs.map((p, index) => {
               return (
-                <p className={`paragraph ${styleAbout.text}`} key={index}>{p}</p>
+                <p className={styleAbout.text} key={index}>{p}</p>
               )
             })
           }

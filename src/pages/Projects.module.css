@@ -5,3 +5,8 @@
     gap: 3rem;
     padding: 6rem 0;
 }
+
+.title {
+    font-family: var(--title-font);
+    font-size: 5rem;
+}
