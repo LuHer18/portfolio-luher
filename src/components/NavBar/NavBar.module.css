@@ -113,10 +113,7 @@
     border-radius: 0.6rem;
     transition: all 0.3s ease-in 0.3s;
 }
-.tooltipRight{
-    opacity: 1;
-    
-}
+
 .iconbox:hover{
     cursor: pointer;
     color: white;

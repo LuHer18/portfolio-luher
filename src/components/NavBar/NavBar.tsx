@@ -44,7 +44,7 @@ export const NavBar = () => {
           <ul className={style.ul2}>
             <li className={style.listNavBar}>
               <div className={style.iconbox} onClick={handleLanguage}>
-                <span className={`button-text ${style.tooltip} ${style.tooltipRight}`}>{language}</span>
+                <span className={`button-text ${style.tooltip}`}>{language}</span>
                 <IconChangeLanguage />
               </div>
             </li>
