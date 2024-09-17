@@ -33,7 +33,7 @@ export const ModalContact = ({ closeModal, modalIsOpen }: PropsModal) => {
       >
         {showForm ? (
           <>
-            <h2 className='title2'>Envíame un email</h2>
+            <h2 className='title2'>{context?.subContentLanguage.sendEmailButton}</h2>
             <form className={styleForm.form} ref={form} onSubmit={sendEmail}>
               <div className={styleForm.formInputs}>
                 <label className={`${styleForm.formLabel} ${errors.name ? styleForm.error : ''}`}>
