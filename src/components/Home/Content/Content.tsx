@@ -15,8 +15,8 @@ export const Content = ({openModal}: ContentProps) => {
   if (!context) {
     return null
   }
-
-  const { titleLanguage, subContentLanguage, data } = context
+  
+  const { titleLanguage, subContentLanguage, data, language } = context
   return (
     <section className={style.container}>
       <article className={`${style.bg} ${style.yellowb}`}><About title={titleLanguage.about} data ={data}/></article>
@@ -25,7 +25,7 @@ export const Content = ({openModal}: ContentProps) => {
         <Contact title={titleLanguage.contact} openModal={openModal} subContent={subContentLanguage} />
       </article>
       <article className={`${style.bg} ${style.blueb}`}>
-        <Curriculum title={titleLanguage.curriculum} subContent={subContentLanguage}/>
+        <Curriculum title={titleLanguage.curriculum} subContent={subContentLanguage} language = {language}/>
       </article>
       <article className={`${style.bg} ${style.yellowb}`}><Skills title = {titleLanguage.skills} data ={data} /></article>
     </section>

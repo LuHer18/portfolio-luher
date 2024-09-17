@@ -6,16 +6,18 @@ import { IconDownload } from "../../Icons/IconDownload"
 import style from "./Curriculum.module.css"
 
 type PropsCurriculum = {
-    title: string,
+    title: string
     subContent: SubContentLanguage
+    language: string
 }
 
-export const Curriculum = ({ title, subContent }: PropsCurriculum) => {
+export const Curriculum = ({ title, subContent, language }: PropsCurriculum) => {
     const [loading, setLoading] = useState(false)
 
+    const url = (language === "es")?'/assets/curriculum-spanish.pdf':'/assets/curriculum-english.pdf'; 
     const onDowload = () => {
         setLoading(true)
-        downloadPdf();
+        downloadPdf(url);
         setTimeout(() => {
             setLoading(false);
         }, 1000);
