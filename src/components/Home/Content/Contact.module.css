@@ -28,8 +28,10 @@
 
 @media (max-width: 600px) {
     .containerContentContact {
-        gap: 2rem;
+        gap: 5rem;
+        align-items: center;
     }
+    
 
 }
 
