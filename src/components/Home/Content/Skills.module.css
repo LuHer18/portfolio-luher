@@ -36,12 +36,12 @@
 @keyframes scroll {
     0%{
         transform: translate(0);
-        -webkit-transform: translateX(0);
+        -webkit-transform: translate(0);
         
     }
     100%{
         transform: translate(calc(-14rem * 11 ));
-        -webkit-transform: translateX(calc(-14rem * 11 ));
+        -webkit-transform: translate(calc(-14rem * 11 ));
         
     }
 }
@@ -55,12 +55,12 @@
     @keyframes scroll {
         0%{
             transform: translate(0);
-            -webkit-transform: translateX(0);
+            -webkit-transform: translate(0);
             
         }
         100%{
             transform: translate(calc(-10rem * 11 ));
-            -webkit-transform: translateX(calc(-10rem * 11 ));
+            -webkit-transform: translate(calc(-10rem * 11 ));
             
         }
     }
