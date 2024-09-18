@@ -55,6 +55,11 @@
     .slider .slideTrack {
         width: calc(12rem * 22);
     }
+    .slider .slide {
+        width: 12rem;
+        
+    }
+    
 
     @keyframes scroll {
         0%{
@@ -63,8 +68,8 @@
             
         }
         100%{
-            transform: translate(calc(-10rem * 11 ));
-            -webkit-transform: translate(calc(-10rem * 11 ));
+            transform: translate(calc(-12rem * 11 ));
+            -webkit-transform: translate(calc(-12rem * 11 ));
             
         }
     }

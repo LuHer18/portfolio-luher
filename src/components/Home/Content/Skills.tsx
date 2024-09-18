@@ -25,7 +25,7 @@ export const Skills = ({ title, data }: SkillsProps) => {
                     }
                     {
                         skills?.map(skill => {
-                            const skillImage = `../../../../assets/icons-skills/${skill.image}.svg`
+                            const skillImage = `/assets/icons-skills/${skill.image}.svg`
                             return (
                                 <div className={style.slide} key={skill.name}>
                                     <img className={style.imageSkills} loading='lazy' src={skillImage} alt={skill.name} />
