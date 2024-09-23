@@ -1,0 +1,14 @@
+.heroContainer {
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  @media (max-width: 768px) {
+    .heroContainer {
+      flex-direction: column; /* Cambia la dirección si es necesario */
+      padding: 0.5rem; /* Ajusta el padding */
+    }
+  }
