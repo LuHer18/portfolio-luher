@@ -37,7 +37,7 @@ export const About = () => {
       >
         <motion.img
           className={styleAbout.imgMe}
-          src="./assets/me.webp"
+          src="./assets/me-v1.webp"
           alt="me"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
