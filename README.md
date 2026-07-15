@@ -1,53 +1,42 @@
-# Mi Portafolio Web
+# Luis Herrera Portfolio
 
-Este es el código fuente de mi portafolio personal, creado con **React** y **TypeScript**. El objetivo de este proyecto es mostrar mi experiencia, habilidades, proyectos, y ofrecer una manera de contactarme.
+A bilingual, static portfolio built with Astro and TypeScript. The complete portfolio is available at `/`, `/about/`, and `/projects/`; the latter routes open at their corresponding sections without requiring an SPA fallback.
 
-## Captura de pantalla Desktop
-![portfolioDesktop](https://github.com/user-attachments/assets/6a795f9a-dd12-47df-9360-7528e43663b0)
+## Development
 
+```bash
+npm install
+npm run dev
+```
 
-## Captura de pantalla Mobile
-![portfolioMobile](https://github.com/user-attachments/assets/278db4ee-16f8-49d2-9f9c-a459dd55206e)
+Quality and production checks:
 
+```bash
+npm run check
+npm run build
+npm run preview
+```
 
-## 🛠 Tecnologías Utilizadas
+## Contact Form
 
-- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
-- **TypeScript**: Superconjunto de JavaScript que añade tipado estático.
-- **CSS Modules**: Para estilos locales y evitar colisiones de clases CSS.
-- **Framer Motion**: Para animaciones fluidas y atractivas en la interfaz.
-- **React Router DOM**: Para la navegación entre páginas dentro de la aplicación.
-- **EmailJS**: Para enviar emails directamente desde el formulario de contacto sin necesidad de un backend.
+The contact form uses EmailJS when these public build-time variables are present:
 
-## 💥 Funcionalidades
+```dotenv
+PUBLIC_EMAILJS_SERVICE_ID=your_service_id
+PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
+PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+```
 
-- **Navegación Dinámica**: Utilizando `React Router DOM` para navegar entre las diferentes secciones del portafolio.
-- **Animaciones Interactivas**: Implementadas con **Framer Motion** para animaciones suaves en la carga de páginas, botones y otros elementos interactivos.
-- **Estilos Modulares**: Los estilos están implementados usando **CSS Modules**, asegurando un diseño limpio y evitando conflictos entre estilos.
-- **Formulario de Contacto**: Implementado con **EmailJS** para permitir a los usuarios enviarme correos electrónicos directamente desde el sitio.
-- **Componentización**: La estructura del proyecto sigue la filosofía de componentes reutilizables de React.
+Without them, the page remains readable and the private contact form reports that sending is temporarily unavailable.
+Existing deployment environments may keep using `VITE_SERVICE_iD`, `VITE_TEMPLATE_ID`, and `VITE_PUBLIC_KEY`; Astro maps them at build time, and the `PUBLIC_EMAILJS_*` names above take precedence.
 
-## 🚀 Instalación
+## Architecture
 
-Si deseas ejecutar este proyecto localmente, sigue estos pasos:
+- Astro renders independent static HTML routes and reusable sections.
+- `src/data/portfolio.ts` owns typed, runtime-validated bilingual content.
+- A small client script handles language persistence, active navigation, mobile-menu accessibility, reveal effects, and form submission.
+- Content is isolated from presentation so a future read-only backend adapter can replace the local source without changing the sections.
 
-1. Clona el repositorio:
+## License
 
-   ```bash
-   https://github.com/LuHer18/portfolio-luher.git
-
-2. Instala las depedencias
-   ```bash
-   npm install
-3. Cambia el nombre de .env.template por .env y añade tu clave pública de EmailJS
-   ```
-   VITE_SERVICE_iD=tu_service_id
-   VITE_TEMPLATE_ID=tu_template_id
-   VITE_PUBLIC_KEY= tu_llave_publica
-   ```
-   Inicia la aplicación:
-   ```bash
-   npm run dev
-
-## 🔑 Licencia
-<p><a href='https://github.com/LuHer18/portfolio-luher/blob/main/LICENSE'>MIT</a> - Creado por <a href='https://github.com/LuHer18'>Luis Herrera</a></p>
+[MIT](LICENSE), created by [Luis Herrera](https://github.com/LuHer18).

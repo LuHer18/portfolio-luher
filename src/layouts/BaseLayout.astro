@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  titleEn?: string;
+  description?: string;
+  descriptionEn?: string;
+}
+
+const {
+  title = 'Luis Herrera Contreras | Ingeniero de Software',
+  titleEn = 'Luis Herrera Contreras | Software Engineer',
+  description = 'Portafolio de Luis Herrera Contreras, ingeniero de software que construye interfaces web, APIs, servicios backend e integraciones empresariales.',
+  descriptionEn = 'Portfolio of Luis Herrera Contreras, a software engineer building web interfaces, APIs, backend services, and business integrations.',
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} data-content-es={description} data-content-en={descriptionEn} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f7f3ea" data-theme-color />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} data-content-es={title} data-content-en={titleEn} />
+    <meta property="og:description" content={description} data-content-es={description} data-content-en={descriptionEn} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL('/assets/avatar-luher.webp', Astro.site)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} data-content-es={title} data-content-en={titleEn} />
+    <meta name="twitter:description" content={description} data-content-es={description} data-content-en={descriptionEn} />
+    <meta name="twitter:image" content={new URL('/assets/avatar-luher.webp', Astro.site)} />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%230F172A%22/><path d=%22M18 16v32h28v-8H27V16z%22 fill=%22%23EA1E31%22/></svg>" />
+    <title data-content-es={title} data-content-en={titleEn}>{title}</title>
+    <script is:inline>
+      (() => {
+        let language;
+        let theme;
+        try { language = localStorage.getItem('portfolio-language') ?? localStorage.getItem('language'); } catch { /* Use Spanish when storage is unavailable. */ }
+        try { theme = localStorage.getItem('portfolio-theme'); } catch { /* Follow the system when storage is unavailable. */ }
+        const root = document.documentElement;
+        root.lang = language === 'en' ? 'en' : 'es';
+        root.dataset.theme = theme === 'light' || theme === 'dark' ? theme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        root.style.colorScheme = root.dataset.theme;
+        document.querySelector('[data-theme-color]')?.setAttribute('content', root.dataset.theme === 'dark' ? '#0f172a' : '#f7f3ea');
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

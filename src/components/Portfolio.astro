@@ -1,0 +1,275 @@
+---
+import Header from './Header.astro';
+import { portfolio } from '../data/portfolio';
+
+interface Props { initialSection?: 'home' | 'about' | 'projects' }
+const { initialSection = 'home' } = Astro.props;
+const labels = {
+  about: { es: 'Perfil', en: 'About' }, experience: { es: 'Experiencia', en: 'Experience' },
+  projects: { es: 'Proyectos seleccionados', en: 'Selected projects' }, skills: { es: 'Habilidades', en: 'Skills' },
+  resume: { es: 'Currículum', en: 'Resume' }, contact: { es: 'Contacto', en: 'Contact' },
+};
+const skillIcons: Readonly<Record<string, string>> = {
+  React: '/assets/icons-skills/React.svg',
+  TypeScript: '/assets/icons-skills/TypeScript.svg',
+  JavaScript: '/assets/icons-skills/JavaScript.svg',
+  HTML: '/assets/icons-skills/HTML.svg',
+  CSS: '/assets/icons-skills/CSS.svg',
+  'Node.js': '/assets/icons-skills/Node.svg',
+  MongoDB: '/assets/icons-skills/MongoDb.svg',
+};
+const primarySkills = new Set(['React', 'TypeScript', 'Node.js', 'Java', 'Testing']);
+---
+
+<Header />
+<main data-initial-section={initialSection}>
+  <section class="hero shell" id="home" data-section>
+    <div class="hero-copy reveal">
+      <p class="eyebrow"><span data-copy="es">Disponible para construir productos claros y sólidos</span><span data-copy="en">Available to build clear, reliable products</span></p>
+      <h1>{portfolio.profile.name}</h1>
+      <p class="hero-role"><span data-copy="es">{portfolio.profile.role.es}</span><span data-copy="en">{portfolio.profile.role.en}</span></p>
+      <p class="hero-intro"><span data-copy="es">{portfolio.profile.introduction.es}</span><span data-copy="en">{portfolio.profile.introduction.en}</span></p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects"><span data-copy="es">Ver proyectos</span><span data-copy="en">View projects</span></a>
+        <a class="button button-quiet" href="#contact"><span data-copy="es">Escríbeme</span><span data-copy="en">Contact me</span></a>
+      </div>
+      <div class="hero-socials" aria-label="Perfiles profesionales" data-aria-es="Perfiles profesionales" data-aria-en="Professional profiles">
+        <a href={portfolio.social.github} target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub de Luis Herrera (se abre en una pestaña nueva)" data-aria-es="Perfil de GitHub de Luis Herrera (se abre en una pestaña nueva)" data-aria-en="Luis Herrera's GitHub profile (opens in a new tab)">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.82a9.5 9.5 0 0 1 2.5.34c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"></path></svg>
+          <span>GitHub</span>
+        </a>
+        <a href={portfolio.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn de Luis Herrera (se abre en una pestaña nueva)" data-aria-es="Perfil de LinkedIn de Luis Herrera (se abre en una pestaña nueva)" data-aria-en="Luis Herrera's LinkedIn profile (opens in a new tab)">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 8.5H3.2V21h3.3V8.5ZM4.85 3A1.94 1.94 0 1 0 4.85 6.88 1.94 1.94 0 0 0 4.85 3ZM21 13.84c0-3.76-2-5.51-4.68-5.51a4.04 4.04 0 0 0-3.64 2h-.05V8.5H9.46V21h3.3v-6.19c0-1.63.31-3.21 2.33-3.21 2 0 2.02 1.87 2.02 3.32V21H21v-7.16Z"></path></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+    <div class="portrait-wrap reveal">
+      <div class="portrait-frame">
+        <img class="portrait-base" src="/assets/avatar-luher.webp" width="1413" height="1412" alt="Luis Herrera Contreras, ingeniero de software" data-alt-es="Luis Herrera Contreras, ingeniero de software" data-alt-en="Luis Herrera Contreras, software engineer" fetchpriority="high" tabindex="0" />
+        <img class="portrait-helmet" src="/assets/avatar-ironluher.webp" width="1272" height="1280" alt="" aria-hidden="true" data-helmet />
+      </div>
+      <p class="portrait-location"><span data-copy="es">{portfolio.profile.location.es}</span><span data-copy="en">{portfolio.profile.location.en}</span></p>
+    </div>
+  </section>
+
+  <section class="section shell" id="about" data-section>
+    <div class="section-heading reveal"><p class="section-number">01</p><h2><span data-copy="es">{labels.about.es}</span><span data-copy="en">{labels.about.en}</span></h2></div>
+    <div class="about-grid reveal">
+      <p class="lead"><span data-copy="es">{portfolio.profile.about.es}</span><span data-copy="en">{portfolio.profile.about.en}</span></p>
+      <aside class="principles" aria-label="Principios de trabajo" data-aria-es="Principios de trabajo" data-aria-en="Working principles">
+        <p><span data-copy="es">Enfoque</span><span data-copy="en">Focus</span></p>
+        <ul><li><span data-copy="es">Mantenibilidad</span><span data-copy="en">Maintainability</span></li><li><span data-copy="es">Calidad verificable</span><span data-copy="en">Verifiable quality</span></li><li><span data-copy="es">Contexto de negocio</span><span data-copy="en">Business context</span></li></ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section shell" id="experience" data-section>
+    <div class="section-heading reveal"><p class="section-number">02</p><h2><span data-copy="es">{labels.experience.es}</span><span data-copy="en">{labels.experience.en}</span></h2></div>
+    <article class="experience-card reveal">
+      <div class="experience-meta"><p class="company">{portfolio.experience.company}</p><h3><span data-copy="es">{portfolio.experience.role.es}</span><span data-copy="en">{portfolio.experience.role.en}</span></h3><p><span data-copy="es">{portfolio.experience.period.es}</span><span data-copy="en">{portfolio.experience.period.en}</span></p><p><span data-copy="es">{portfolio.experience.location.es}</span><span data-copy="en">{portfolio.experience.location.en}</span></p></div>
+      <ul class="responsibilities" data-copy="es">{portfolio.experience.responsibilities.es.map((item) => <li>{item}</li>)}</ul>
+      <ul class="responsibilities" data-copy="en">{portfolio.experience.responsibilities.en.map((item) => <li>{item}</li>)}</ul>
+    </article>
+  </section>
+
+  <section class="section shell" id="projects" data-section>
+    <div class="section-heading reveal"><p class="section-number">03</p><h2><span data-copy="es">{labels.projects.es}</span><span data-copy="en">{labels.projects.en}</span></h2></div>
+    <div class="projects-grid">
+      {portfolio.projects.map((project, index) => (
+        <article class="project-card reveal">
+          <div class="project-image"><img src={project.image} width="720" height="405" loading="lazy" alt="" /><span>0{index + 1}</span></div>
+          <div class="project-body"><h3>{project.name}</h3><p><span data-copy="es">{project.description.es}</span><span data-copy="en">{project.description.en}</span></p><ul class="tags" aria-label="Tecnologías" data-aria-es="Tecnologías" data-aria-en="Technologies">{project.technologies.map((technology) => <li>{technology}</li>)}</ul><div class="project-links"><a href={project.demoUrl} target="_blank" rel="noreferrer"><span data-copy="es">Sitio en vivo</span><span data-copy="en">Live site</span><span aria-hidden="true"> ↗</span></a><a href={project.repositoryUrl} target="_blank" rel="noreferrer"><span data-copy="es">Código</span><span data-copy="en">Source</span><span aria-hidden="true"> ↗</span></a></div></div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section shell" id="skills" data-section>
+    <div class="section-heading reveal"><p class="section-number">04</p><h2><span data-copy="es">{labels.skills.es}</span><span data-copy="en">{labels.skills.en}</span></h2></div>
+    <div class="skills-bento reveal">
+      {portfolio.skillGroups.map((group, index) => (
+        <article class:list={['skill-domain', `skill-domain-${index + 1}`]} tabindex="0">
+          <div class="skill-domain-heading">
+            <p class="skill-index">0{index + 1}</p>
+            <div>
+              <h3><span data-copy="es">{group.title.es}</span><span data-copy="en">{group.title.en}</span></h3>
+              <p class="skill-summary"><span data-copy="es">{group.summary.es}</span><span data-copy="en">{group.summary.en}</span></p>
+            </div>
+          </div>
+          <ul>
+            {group.skills.map((skill) => {
+              const label = typeof skill === 'string' ? skill : skill.es;
+              const icon = skillIcons[label];
+              return (
+                <li class:list={{ 'skill-primary': primarySkills.has(label) }}>
+                  {icon && <img src={icon} width="32" height="32" alt="" aria-hidden="true" loading="lazy" />}
+                  {typeof skill === 'string' ? <span>{skill}</span> : <><span data-copy="es">{skill.es}</span><span data-copy="en">{skill.en}</span></>}
+                </li>
+              );
+            })}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section shell" id="resume" data-section>
+    <div class="resume-card reveal"><div><p class="section-number">05</p><h2><span data-copy="es">{labels.resume.es}</span><span data-copy="en">{labels.resume.en}</span></h2><p><span data-copy="es">Una versión descargable de mi experiencia y formación.</span><span data-copy="en">A downloadable overview of my experience and education.</span></p></div><div class="resume-actions"><a class="button button-primary" data-resume href={portfolio.resume.es} download><span data-copy="es">Descargar CV</span><span data-copy="en">Download resume</span></a><a class="text-link" href="https://curriculum-lh.netlify.app/" target="_blank" rel="noreferrer"><span data-copy="es">Ver versión web ↗</span><span data-copy="en">View web version ↗</span></a></div></div>
+  </section>
+
+  <section class="section shell contact" id="contact" data-section>
+    <div class="contact-copy reveal"><p class="section-number">06</p><h2><span data-copy="es">Construyamos algo útil.</span><span data-copy="en">Let’s build something useful.</span></h2><p><span data-copy="es">Si buscas colaboración en interfaces, servicios backend o integraciones, envíame un mensaje mediante el formulario.</span><span data-copy="en">If you need collaboration on interfaces, backend services, or integrations, send me a message through the form.</span></p></div>
+    <form class="contact-form reveal" data-contact-form method="post" action="" novalidate>
+      <label><span><span data-copy="es">Nombre</span><span data-copy="en">Name</span></span><input name="user_name" autocomplete="name" required /></label>
+      <label><span>Email</span><input type="email" name="user_email" autocomplete="email" required /></label>
+      <label><span><span data-copy="es">Mensaje</span><span data-copy="en">Message</span></span><textarea name="message" rows="5" required></textarea></label>
+      <button class="button button-primary" type="submit"><span data-copy="es">Enviar mensaje</span><span data-copy="en">Send message</span></button>
+      <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+    </form>
+  </section>
+</main>
+<footer class="footer shell"><p>© {new Date().getFullYear()} Luis Herrera</p><div><a href={portfolio.social.linkedin} target="_blank" rel="noreferrer">LinkedIn</a><a href={portfolio.social.github} target="_blank" rel="noreferrer">GitHub</a></div></footer>
+
+<script>
+  const html = document.documentElement;
+  const menuButton = document.querySelector<HTMLButtonElement>('[data-menu-button]');
+  const menu = document.querySelector<HTMLElement>('[data-menu]');
+  const languageButton = document.querySelector<HTMLButtonElement>('[data-language]');
+  const themeButton = document.querySelector<HTMLButtonElement>('[data-theme-button]');
+  const resumeLink = document.querySelector<HTMLAnchorElement>('[data-resume]');
+  const colorScheme = matchMedia('(prefers-color-scheme: dark)');
+  let explicitTheme: 'light' | 'dark' | null = null;
+  let previouslyFocused: HTMLElement | null = null;
+
+  try {
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    explicitTheme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : null;
+  } catch { /* Storage may be unavailable. */ }
+
+  function currentLanguage(): 'es' | 'en' { return html.lang === 'en' ? 'en' : 'es'; }
+  function currentTheme(): 'light' | 'dark' { return html.dataset.theme === 'light' ? 'light' : 'dark'; }
+  function updateMenuLabel() {
+    if (!menuButton) return;
+    const open = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-label', currentLanguage() === 'es' ? (open ? 'Cerrar menú' : 'Abrir menú') : (open ? 'Close menu' : 'Open menu'));
+  }
+  function updateThemeButton() {
+    if (!themeButton) return;
+    const nextTheme = currentTheme() === 'dark' ? 'light' : 'dark';
+    themeButton.dataset.nextTheme = nextTheme;
+    themeButton.setAttribute('aria-label', currentLanguage() === 'es' ? `Activar modo ${nextTheme === 'light' ? 'claro' : 'oscuro'}` : `Switch to ${nextTheme} mode`);
+  }
+  function applyTheme(theme: 'light' | 'dark') {
+    html.dataset.theme = theme;
+    html.style.colorScheme = theme;
+    document.querySelector<HTMLMetaElement>('[data-theme-color]')?.setAttribute('content', theme === 'dark' ? '#0f172a' : '#f7f3ea');
+    updateThemeButton();
+  }
+
+  function setLanguage(language: 'es' | 'en') {
+    html.lang = language;
+    document.querySelectorAll<HTMLElement>('[data-aria-es]').forEach((element) => element.setAttribute('aria-label', element.dataset[language === 'es' ? 'ariaEs' : 'ariaEn'] ?? ''));
+    document.querySelectorAll<HTMLImageElement>('[data-alt-es]').forEach((image) => { image.alt = image.dataset[language === 'es' ? 'altEs' : 'altEn'] ?? ''; });
+    document.querySelectorAll<HTMLElement>('[data-content-es]').forEach((element) => {
+      const value = element.dataset[language === 'es' ? 'contentEs' : 'contentEn'] ?? '';
+      if (element instanceof HTMLMetaElement) element.content = value;
+      else element.textContent = value;
+    });
+    if (resumeLink) resumeLink.href = language === 'es' ? '/assets/curriculum-spanish.pdf' : '/assets/curriculum-english.pdf';
+    try { localStorage.setItem('portfolio-language', language); } catch { /* Storage may be unavailable. */ }
+    updateMenuLabel();
+    updateThemeButton();
+  }
+  languageButton?.addEventListener('click', () => setLanguage(html.lang === 'es' ? 'en' : 'es'));
+  themeButton?.addEventListener('click', () => {
+    explicitTheme = currentTheme() === 'dark' ? 'light' : 'dark';
+    try { localStorage.setItem('portfolio-theme', explicitTheme); } catch { /* Keep the session choice when storage is unavailable. */ }
+    applyTheme(explicitTheme);
+  });
+  colorScheme.addEventListener('change', (event) => { if (!explicitTheme) applyTheme(event.matches ? 'dark' : 'light'); });
+  setLanguage(html.lang === 'en' ? 'en' : 'es');
+
+  function closeMenu(restoreFocus = false) {
+    if (!menuButton || !menu) return;
+    const wasOpen = menu.hasAttribute('data-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menu.removeAttribute('data-open');
+    document.body.classList.remove('menu-open');
+    updateMenuLabel();
+    if (wasOpen && restoreFocus && previouslyFocused?.isConnected) previouslyFocused.focus();
+    previouslyFocused = null;
+  }
+  function openMenu() {
+    if (!menuButton || !menu) return;
+    previouslyFocused = document.activeElement as HTMLElement;
+    menuButton.setAttribute('aria-expanded', 'true');
+    menu.setAttribute('data-open', '');
+    document.body.classList.add('menu-open');
+    updateMenuLabel();
+    menu.querySelector<HTMLElement>('a')?.focus();
+  }
+  menuButton?.addEventListener('click', () => menuButton.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu());
+  menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => closeMenu(true)));
+  const desktopMedia = matchMedia('(min-width: 50.001rem)');
+  desktopMedia.addEventListener('change', (event) => { if (event.matches) closeMenu(); });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menu?.hasAttribute('data-open')) closeMenu(true);
+    if (event.key !== 'Tab' || !menu?.hasAttribute('data-open')) return;
+    const focusable = [menuButton, ...menu.querySelectorAll<HTMLElement>('a, button')].filter(Boolean) as HTMLElement[];
+    const first = focusable[0];
+    const last = focusable.at(-1);
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+    if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+  });
+  document.addEventListener('pointerdown', (event) => {
+    if (menu?.hasAttribute('data-open') && !menu.contains(event.target as Node) && !menuButton?.contains(event.target as Node)) closeMenu();
+  });
+
+  const sections = document.querySelectorAll<HTMLElement>('[data-section]');
+  const links = document.querySelectorAll<HTMLAnchorElement>('[data-section-link]');
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      links.forEach((link) => link.toggleAttribute('aria-current', link.dataset.sectionLink === entry.target.id));
+    });
+  }, { rootMargin: '-35% 0px -55%' });
+  sections.forEach((section) => sectionObserver.observe(section));
+
+  const initialSection = document.querySelector('main')?.dataset.initialSection;
+  if (initialSection && initialSection !== 'home' && !location.hash) requestAnimationFrame(() => document.getElementById(initialSection)?.scrollIntoView());
+  const revealElements = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.setAttribute('data-visible', ''); revealObserver.unobserve(entry.target); } }), { threshold: 0.12 });
+  revealElements.forEach((element) => revealObserver.observe(element));
+  html.classList.add('reveal-ready');
+
+  const helmet = document.querySelector<HTMLImageElement>('[data-helmet]');
+  const markHelmetFailed = () => helmet?.parentElement?.setAttribute('data-helmet-failed', '');
+  helmet?.addEventListener('error', markHelmetFailed);
+  if (helmet?.complete && !helmet.naturalWidth) markHelmetFailed();
+
+  const form = document.querySelector<HTMLFormElement>('[data-contact-form]');
+  const status = document.querySelector<HTMLElement>('[data-form-status]');
+  form?.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (!form.reportValidity() || !status) return;
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    const serviceId = import.meta.env.PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY;
+    if (!serviceId || !templateId || !publicKey) {
+      status.textContent = html.lang === 'es' ? 'El formulario no está disponible en este momento. Intenta de nuevo más tarde.' : 'The form is currently unavailable. Please try again later.';
+      return;
+    }
+    if (button) button.disabled = true;
+    status.textContent = html.lang === 'es' ? 'Enviando…' : 'Sending…';
+    try {
+      const { default: emailjs } = await import('@emailjs/browser');
+      await emailjs.sendForm(serviceId, templateId, form, { publicKey });
+      status.textContent = html.lang === 'es' ? 'Mensaje enviado correctamente.' : 'Message sent successfully.';
+      form.reset();
+    } catch {
+      status.textContent = html.lang === 'es' ? 'No se pudo enviar el mensaje. Intenta de nuevo más tarde.' : 'Could not send the message. Please try again later.';
+    } finally { if (button) button.disabled = false; }
+  });
+</script>
